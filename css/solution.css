@@ -11,6 +11,8 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 10px;
+
+    background-color: cadetblue;
 }
 .TitleReward {
     grid-column-start: 3;
@@ -18,6 +20,8 @@
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 10px;
+
+    background-color: chartreuse;
 }
 .ContainerInfo {
     grid-column-start: 1;
