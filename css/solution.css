@@ -10,7 +10,8 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: cadetblue;
 }
@@ -19,7 +20,8 @@
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: chartreuse;
 }
@@ -28,7 +30,8 @@
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: aqua;
 }
@@ -37,7 +40,8 @@
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 6;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: red;
 }
@@ -46,7 +50,8 @@
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: royalblue;
 }
@@ -55,7 +60,8 @@
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 6;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: salmon;
   
@@ -65,7 +71,8 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 6;
-    margin: 10px;
+    margin: 5px;
+    border-radius: 5px;
 
     background-color: brown; 
 }
