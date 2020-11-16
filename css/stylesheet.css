@@ -23,5 +23,9 @@ body {
 }
 
 .navbar-normal .logo {
-    height: 40px;
+    position: absolute;
+    left: 0;
+    top: -2px;
+    height: 50px;
+    margin-left: 20px;
 }
