@@ -9,6 +9,7 @@ body {
     background-color: yellow;
     width: 100%;
     height: 48px;
+    text-align: center;
 }
 
 /* Links inside the navbar */
