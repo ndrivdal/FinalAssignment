@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    font-family: 'Karla', sans-serif;
+}
+
+/* --- NAVBAR --- */
+.navbar-normal {
+    overflow: hidden;
+    background-color: yellow;
+    width: 100%;
+    height: 48px;
+}
+
+/* Links inside the navbar */
+.navbar-normal a {
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
