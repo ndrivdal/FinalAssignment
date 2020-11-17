@@ -110,6 +110,10 @@
     background-color: transparent;
 }
 
+/* dropdown boxes
+Learning material: https://www.w3schools.com/howto/howto_js_accordion.asp
+ */
+
 .dropdown {
     margin: 2px;
     border-radius: 5px;
@@ -136,6 +140,8 @@
     display: none;
     overflow: hidden;
 }
+
+/* dropdown boxes end */
 
 .Title-app { 
     grid-column-start: 1;
