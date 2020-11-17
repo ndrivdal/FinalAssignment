@@ -1,69 +1,92 @@
 .grid-container {
     display: grid;
-    min-height: 100vh;
+    min-height: calc(100vh + 48px);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 50px 1fr 1fr;
-   
+    grid-template-rows: 50px 1fr 50px 1fr 1fr 48px;
+
+    background-image: url("../images/solutions-background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
+
+@media screen and (max-width: 640px) {
+    .grid-container {
+        margin-top: -4px;
+    }
+}
+
 .TitleInfo {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: cadetblue;
+    background-color: transparent
+}
+.TitleInfo h2 {
+    margin-top: 2px;
+    color: green;
+
 }
 .TitleReward {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 1;
     grid-row-end: 2;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: chartreuse;
+    background-color: transparent;
+}
+.TitleReward h2 {
+    margin-top: 2px;
+    color: green;
 }
 .ContainerInfo {
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: aqua;
+    background-color:white;
 }
 .ContainerReward {
     grid-column-start: 3;
     grid-column-end: 4;
     grid-row-start: 2;
     grid-row-end: 6;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: red;
+    background-color: white;
 }
 .Title-app { 
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
     grid-row-end: 4;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: royalblue;
+    background-color: transparent;
+}
+.Title-app h2 {
+    margin-top: 2px;
+    color: green;
 }
 .ContainerInfoApp {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
     grid-row-end: 6;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: salmon;
+    background-color: white;
   
 }
 .ContainerImgApp {
@@ -71,8 +94,8 @@
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 6;
-    margin: 5px;
+    margin: 10px;
     border-radius: 5px;
 
-    background-color: brown; 
+    background-color: white; 
 }
