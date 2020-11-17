@@ -1,0 +1,119 @@
+body{
+    margin: 0;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 1.5fr 0.1fr 0.1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      ". logoFooter logoFooter ."
+      ". createdBy contactFooter ."
+      ". someIcons someIcons ."
+      "copyRight copyRight copyRight copyRight";
+    
+    background-color: #8491A3;
+    font-family: 'karla';
+    color: ;
+}
+  
+.logoFooter { 
+    grid-area: logoFooter; 
+    text-align: center;
+}
+
+.logoFooter img{
+    height: 50px;
+}
+  
+.createdBy { 
+    grid-area: createdBy; 
+    padding-left: 3vw;
+    border-right: 1px #3d434b dashed;
+    border-top: 3px #3d434b dashed;
+}
+
+.createdBy p {
+    line-height: 20px;
+}
+  
+.contactFooter { 
+    grid-area: contactFooter; 
+    padding-left: 3vw;
+    border-top: 3px #3d434b dashed;
+}
+  
+.someIcons { 
+    grid-area: someIcons; 
+    text-align: center; 
+    justify-self: center;
+}
+
+.someIcons a{
+    font-size: 2em;
+    color: black;
+    padding: 2vw 5vw ;
+    justify-self: center;
+    float: left;
+}
+
+.copyRight{
+    grid-area: copyRight;
+    border-top: 1px black solid;
+    text-align: center;
+}
+
+p strong{
+    font-size: 1.2em;
+    color: #254228;
+}
+
+.footer a{
+    color: black;
+}
+
+@media screen and (max-width: 640px) {
+    .footer {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 1fr 0.8fr 0.2fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+          "logoFooter"
+          "contactFooter"
+          "createdBy"
+          "someIcons"
+          "copyRight";
+    }
+      
+    .logoFooter { 
+        grid-area: logoFooter; 
+    }
+      
+    .contactFooter { 
+        grid-area: contactFooter; 
+        text-align: center;
+    }
+      
+    .createdBy { 
+        grid-area: createdBy;
+        border-right: none;
+        text-align: center;
+        
+    }
+      
+    .someIcons { 
+        grid-area: someIcons; 
+        float: left;
+    }
+
+    .copyRight{
+        grid-area: copyRight;
+    }
+      
+      
+}
+
+
+  
