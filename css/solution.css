@@ -11,9 +11,6 @@
 
 @media screen and (max-width: 640px) {
     .grid-container {
-        margin-top: -4px;
-        display: grid;
-        min-height: calc(100vh + 48px);
         margin-top: -6px;
         grid-template-columns: 1fr;
         grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 48px;
