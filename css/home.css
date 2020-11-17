@@ -5,6 +5,7 @@
     min-height: calc(100vh - 48px);
     width: 100vw;
     margin-top: 48px;
+    overflow: hidden;
 }
 
 .backgroundImage {
