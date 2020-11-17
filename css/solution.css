@@ -35,10 +35,11 @@
 
     background-color: transparent;
 }
-.TitleReward h2 {
-    margin-top: 2px;
+.rewardtitle {
+    margin-top: 5px;
     color: green;
 }
+
 .ContainerInfo {
     grid-column-start: 1;
     grid-column-end: 3;
