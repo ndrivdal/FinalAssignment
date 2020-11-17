@@ -46,6 +46,59 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+
+    align-self: end;
+    justify-self: center;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.titleRight {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    align-self: end;
+    justify-self: center;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.detailedGoal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: end;
+    background-color: white;
+
+    min-height: 250px;
+    min-width: 300px;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.detailedBITE{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: end;
+    background-color: white;
+
+    min-height: 250px;
+    min-width: 300px;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
 
