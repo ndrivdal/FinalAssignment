@@ -23,6 +23,11 @@ body {
     text-decoration: none;
 }
 
+/* Removes double padding on logo */
+.navbar-normal a.noPadding {
+    padding: 0;
+}
+
 .navbar-normal .logo {
     position: absolute;
     left: 0;
@@ -75,5 +80,10 @@ body {
         text-align: center;
         padding: 14px 16px;
         text-decoration: none;
+    }
+
+    /* Removes double padding on logo */
+    .navbar-phone-top a.noPadding {
+        padding: 0;
     }
 }
