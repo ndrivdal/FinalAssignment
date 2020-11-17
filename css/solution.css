@@ -106,12 +106,14 @@
     margin: 10px;
     border-radius: 5px;
 
-    background-color: white;
+    background-color: transparent;
 }
 
 .dropdown {
-    background-color: red;
-    color: black;
+    margin: 2px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
     padding: 18px;
     width: 100%;
@@ -126,6 +128,8 @@
 }
 
 .panel {
+    margin: 2px;
+    border-radius: 5px;
     padding: 0 18px;
     background-color: coral;
     display: none;
