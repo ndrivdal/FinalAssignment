@@ -67,7 +67,7 @@ Learning material: https://www.w3schools.com/howto/howto_js_accordion.asp
 .dropdown {
     margin: 2px;
     border-radius: 5px;
-    background-color: #ffffff;
+    background-color: #BCEBCB;
     color: #000000;
     cursor: pointer;
     padding:  18px;
@@ -78,14 +78,14 @@ Learning material: https://www.w3schools.com/howto/howto_js_accordion.asp
 }
 
 .active, .dropdown:hover {
-    background-color: yellow;
+    background-color: #93B48B;
 }
 
 .panel {
     margin: 2px;
     border-radius: 5px;
     padding: 0 18px;
-    background-color: coral;
+    background-color: #F7FFF6;
     display: none;
     overflow: hidden;
 }
