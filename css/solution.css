@@ -88,6 +88,12 @@
     overflow: hidden;
 }
 
+.panel {
+    background-color: #F7FFF6;
+    border-radius: 5px;
+    margin: 2px;
+}
+
 .emoji {
     margin-bottom: -3px;
 }
