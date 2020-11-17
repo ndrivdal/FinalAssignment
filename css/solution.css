@@ -10,56 +10,6 @@
     margin-top: -15px;
 }
 
-@media screen and (max-width: 640px) {
-    .grid-container {
-        margin-top: -6px;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 48px;
-    }
-    .TitleInfo {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 1;
-        grid-row-end: 2; 
-    }
-    .ContainerInfo {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .Title-app {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    .ContainerImgApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-    .ContainerInfoApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-    .TitleReward {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 6;
-        grid-row-end: 7;
-    }
-    .ContainerReward {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 7;
-        grid-row-end: 8; 
-    } 
-}
-
 .TitleInfo {
     grid-column-start: 1;
     grid-column-end: end;
@@ -120,8 +70,7 @@ Learning material: https://www.w3schools.com/howto/howto_js_accordion.asp
     background-color: #ffffff;
     color: #000000;
     cursor: pointer;
-    padding: 18px;
-    width: 100%;
+    padding:  18px;
     text-align: center;
     border: none;
     outline: none;
@@ -177,4 +126,56 @@ Learning material: https://www.w3schools.com/howto/howto_js_accordion.asp
     border-radius: 5px;
 
     background-color: white; 
+}
+
+
+@media screen and (max-width: 640px) {
+    .grid-container {
+        margin-top: -6px;
+    
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+    }
+    .TitleInfo {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .ContainerInfo {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .Title-app {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .ContainerImgApp {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .ContainerInfoApp {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .TitleReward {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .ContainerReward {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 7;
+        grid-row-end: 9; 
+    } 
 }
