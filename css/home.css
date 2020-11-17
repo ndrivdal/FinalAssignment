@@ -1,0 +1,64 @@
+.containerFullScreen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr;
+    min-height: calc(100vh - 48px);
+    width: 100vw;
+    margin-top: 48px;
+}
+
+.backgroundImage {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+}
+
+.goal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 5;
+    justify-self: start;
+    align-self: end;
+    margin: 75px;
+    background-color: white;
+    height: min-content;
+    min-width: 250px;
+    min-height: 200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.goal h1 {
+    color: black;
+}
+
+.titleLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+
+
+
+@media screen and (max-width: 640px) {
+    .containerFullScreen {
+        grid-template-rows: 15% 1fr 1fr;
+        min-height: calc(100vh - 96px);
+    }
+
+    .goal {
+        grid-column-start: 1;
+        grid-column-end: end;
+    }
+}
