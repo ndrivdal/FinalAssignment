@@ -108,6 +108,30 @@
 
     background-color: white;
 }
+
+.dropdown {
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .dropdown:hover {
+    background-color: yellow;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: coral;
+    display: none;
+    overflow: hidden;
+}
+
 .Title-app { 
     grid-column-start: 1;
     grid-column-end: 3;
