@@ -51,6 +51,24 @@
         <div class="panel">
             <p>K</p>
         </div>
+
+        <script>
+            var acc = document.getElementsByClassName("dropdown");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+
     </div>
     <div class="Title-app"><h2>Download our app!</h2></div>
     <div class="ContainerInfoApp"></div>

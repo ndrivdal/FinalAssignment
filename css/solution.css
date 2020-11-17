@@ -18,43 +18,43 @@
     }
     .TitleInfo {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 1;
         grid-row-end: 2; 
     }
     .ContainerInfo {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 2;
         grid-row-end: 3;
     }
     .Title-app {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 3;
         grid-row-end: 4;
     }
     .ContainerImgApp {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 4;
         grid-row-end: 5;
     }
     .ContainerInfoApp {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 5;
         grid-row-end: 6;
     }
     .TitleReward {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 6;
         grid-row-end: 7;
     }
     .ContainerReward {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 7;
         grid-row-end: 8; 
     } 
@@ -62,7 +62,7 @@
 
 .TitleInfo {
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: end;
     grid-row-start: 1;
     grid-row-end: 2;
     margin: 10px;
@@ -109,6 +109,30 @@
 
     background-color: white;
 }
+
+.dropdown {
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: center;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+}
+
+.active, .dropdown:hover {
+    background-color: yellow;
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: coral;
+    display: none;
+    overflow: hidden;
+}
+
 .Title-app { 
     grid-column-start: 1;
     grid-column-end: 3;
