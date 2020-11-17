@@ -12,7 +12,51 @@
 @media screen and (max-width: 640px) {
     .grid-container {
         margin-top: -6px;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 48px;
     }
+    .TitleInfo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+    .ContainerInfo {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .Title-app {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .ContainerImgApp {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+    .ContainerInfoApp {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+    .TitleReward {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+    .ContainerReward {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 7;
+        grid-row-end: 8; 
+    } 
 }
 
 .TitleInfo {
