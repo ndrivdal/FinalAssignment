@@ -30,121 +30,78 @@
     <div class="TitleReward rewardtitle"><h2>Weekly rewards</h2></div>
     <div class="ContainerInfo"></div>
     <div class="ContainerReward">
-        <div class="dropdown">
-            <img class="emoji" src="../images/3rd-place-medal_1f949.png" height="20" width="20"
-                 alt="3rdPlace"/>
-            10km/week</div>
-        <div class="panel">
-            <p> <img src="../images/trophy_1f3c6.png" height="16" width="16" alt="trophyEmoji"/>
-                Prize:<br>
-                50% of your next coffee on 7-Eleven!</p>
-        </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/3rd-place-medal_1f949.png" height="20" width="20"
-                 alt="3rdPlace"/>
-            20km/week</div>
+
+        <label for="tenkm" class="dropdown">10km/week</label>
+        <input class="dropdown_input" type="checkbox" id="tenkm" />
         <div class="panel">
             <p>K</p>
         </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/3rd-place-medal_1f949.png" height="20" width="20"
-                 alt="3rdPlace"/>
-            30km/week</div>
+        <label for="twentykm" class="dropdown">20km/week</label>
+        <input class="dropdown_input" type="checkbox" id="twentykm" />
         <div class="panel">
             <p>K</p>
         </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/3rd-place-medal_1f949.png" height="20" width="20" alt="3rdPlace"/>
-            40km/week</div>
+        <label for="thirtykm" class="dropdown">30km/week</label>
+        <input class="dropdown_input" type="checkbox" id="thirtykm" />
         <div class="panel">
             <p>K</p>
         </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/3rd-place-medal_1f949.png" height="20" width="20" alt="3rdPlace"/>
-            50km/week</div>
+        <label for="fortykm" class="dropdown">40km/week</label>
+        <input class="dropdown_input" type="checkbox" id="fortykm" />
         <div class="panel">
             <p>K</p>
         </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/3rd-place-medal_1f949.png" height="20" width="20"
-                 alt="3rdPlace"/>
-            75km/week</div>
+        <label for="fiftykm" class="dropdown">50km/week</label>
+        <input class="dropdown_input" type="checkbox" id="fiftykm" />
         <div class="panel">
             <p>K</p>
         </div>
-        
+        <label for="seventyfourkm" class="dropdown">75km/week</label>
+        <input class="dropdown_input" type="checkbox" id="seventyfourkm" />
+        <div class="panel">
+            <p>K</p>
+        </div>
+
         <h2 class="rewardtitle">Monthly rewards</h2>
-        <div class="dropdown">
-           <img class="emoji" src="../images/2nd-place-medal_1f948.png" height="20" width="20" alt="2ndPlace"/>
-            100km/month</div>
+
+        <label for="hundredkm" class="dropdown">100km/monthly</label>
+        <input class="dropdown_input" type="checkbox" id="hundredkm" />
         <div class="panel">
             <p>K</p>
         </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/2nd-place-medal_1f948.png" height="20" width="20"
-                 alt="2ndPlace"/>
-            150km/month</div>
+        <label for="hundredfiftykm" class="dropdown">150km/monthly</label>
+        <input class="dropdown_input" type="checkbox" id="hundredfiftykm" />
         <div class="panel">
             <p>K</p>
         </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/2nd-place-medal_1f948.png" height="20" width="20"
-                 alt="2ndPlace"/>
-            200km/month</div>
+        <label for="twohundredkm" class="dropdown">200km/monthly</label>
+        <input class="dropdown_input" type="checkbox" id="twohundredkm" />
         <div class="panel">
             <p>K</p>
         </div>
 
         <h2 class="rewardtitle">Yearly rewards</h2>
-        <div class="dropdown">
-            <img class="emoji" src="../images/1st-place-medal_1f947.png" height="16" width="16"
-                 alt="1stPlace"/>
-            1000km/year
-        </div>
-        <div class="panel">
-            <p>K</p>
-        </div>
-        <div class="dropdown">
-        <img class="emoji" src="../images/1st-place-medal_1f947.png" height="16" width="16"
-             alt="1stPlace"/>
-        2000km/year
-    </div>
-        <div class="panel">
-            <p>K</p>
-        </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/1st-place-medal_1f947.png" height="16" width="16"
-                 alt="1stPlace"/>
-            5000km/year
-        </div>
-        <div class="panel">
-            <p>K</p>
-        </div>
-        <div class="dropdown">
-            <img class="emoji" src="../images/1st-place-medal_1f947.png" height="16" width="16"
-                 alt="1stPlace"/>
-            10.000km/year
-        </div>
-        <div class="panel">
-            <p>K</p>
-        </div>
 
-        <script>
-            var acc = document.getElementsByClassName("dropdown");
-            var i;
-
-            for (i = 0; i < acc.length; i++) {
-                acc[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var panel = this.nextElementSibling;
-                    if (panel.style.display === "block") {
-                        panel.style.display = "none";
-                    } else {
-                        panel.style.display = "block";
-                    }
-                });
-            }
-        </script>
+        <label for="thousandkm" class="dropdown">1000km/year</label>
+        <input class="dropdown_input" type="checkbox" id="thousandkm" />
+        <div class="panel">
+            <p>K</p>
+        </div>
+        <label for="twothousandkm" class="dropdown">2000km/year</label>
+        <input class="dropdown_input" type="checkbox" id="twothousandkm" />
+        <div class="panel">
+            <p>K</p>
+        </div>
+        <label for="fivethousandkm" class="dropdown">5000km/year</label>
+        <input class="dropdown_input" type="checkbox" id="fivethousandkm" />
+        <div class="panel">
+            <p>K</p>
+        </div>
+        <label for="tenthousandkm" class="dropdown">10.000km/year</label>
+        <input class="dropdown_input" type="checkbox" id="tenthousandkm" />
+        <div class="panel">
+            <p>K</p>
+        </div>
 
     </div>
 
