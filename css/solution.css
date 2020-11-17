@@ -91,6 +91,10 @@ Learning material: https://www.w3schools.com/howto/howto_js_accordion.asp
     overflow: hidden;
 }
 
+.emoji {
+    margin-bottom: -3px;
+}
+
 /* dropdown boxes end */
 
 .Title-app { 
