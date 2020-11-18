@@ -13,7 +13,7 @@
     display: grid;
     min-height: calc(100vh + 48px);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 250px 50px 300px 300px 48px;
+    grid-template-rows: 50px 250px 50px 400px 200px 48px;
     margin-top: 48px;
 }
 
@@ -109,6 +109,10 @@
 .panel p {
     padding-left: 20px;
     padding-right: 5px;
+}
+
+.panel a {
+    color: #000000;
 }
 
 .emoji {
