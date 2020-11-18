@@ -1,12 +1,8 @@
-body{
-    margin: 0;
-}
-
 .footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 0.2fr 1.5fr 0.1fr 0.1fr;
-    gap: 0px 0px;
+    gap: 0 0;
     grid-template-areas:
       ". logoFooter logoFooter ."
       ". createdBy contactFooter ."
@@ -14,8 +10,7 @@ body{
       "copyRight copyRight copyRight copyRight";
     
     background-color: #8491A3;
-    font-family: 'karla';
-    color: ;
+    font-family: 'Karla', sans-serif;
 }
   
 .logoFooter { 
@@ -30,8 +25,8 @@ body{
 .createdBy { 
     grid-area: createdBy; 
     padding-left: 3vw;
-    border-right: 1px #3d434b dashed;
-    border-top: 3px #3d434b dashed;
+    border-right: 1px #3d434b solid;
+    border-top: 1px #3d434b solid;
 }
 
 .createdBy p {
@@ -41,7 +36,7 @@ body{
 .contactFooter { 
     grid-area: contactFooter; 
     padding-left: 3vw;
-    border-top: 3px #3d434b dashed;
+    border-top: 1px #3d434b solid;
 }
   
 .someIcons { 
@@ -64,7 +59,7 @@ body{
     text-align: center;
 }
 
-p strong{
+.footer p strong{
     font-size: 1.2em;
     color: #254228;
 }
@@ -77,8 +72,9 @@ p strong{
     .footer {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.8fr 0.2fr 1fr;
-        gap: 0px 0px;
+        grid-template-rows: 0.2fr 1fr 0.8fr 0.2fr 0.6fr;
+        gap: 0 0;
+        min-height: 102vh;
         grid-template-areas:
           "logoFooter"
           "contactFooter"

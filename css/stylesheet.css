@@ -1,6 +1,11 @@
+html {
+    scroll-behavior: smooth; /* does not work on Safari, but that's ok */
+}
+
 body {
     margin: 0;
     font-family: 'Karla', sans-serif;
+    overflow-x: hidden;
 }
 
 /* --- NAVBAR --- */
@@ -33,7 +38,7 @@ body {
     font-weight: 700;
 }
 
-.navbar-normal .navactive {
+.navactive {
     font-weight: 700;
     cursor: default;
 }

@@ -1,12 +1,19 @@
+.backgroundImage {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+
+    z-index: -1;
+}
+
 .grid-container {
     display: grid;
     min-height: calc(100vh + 48px);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 1fr 50px 1fr 1fr 48px;
-
-    background-image: url("../images/solutions-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    grid-template-rows: 50px 250px 50px 400px 200px 48px;
     margin-top: 48px;
 }
 
@@ -22,7 +29,8 @@
 }
 .TitleInfo h2 {
     margin-top: 2px;
-    color: green;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 
 }
 .TitleReward {
@@ -37,10 +45,12 @@
 }
 .rewardtitle {
     margin-top: 5px;
-    color: green;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 
 .ContainerInfo {
+    heigh: auto;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 2;
@@ -49,6 +59,8 @@
     border-radius: 5px;
 
     background-color:white;
+    padding: 20px;
+    font-size: 1.2em;
 }
 .ContainerReward {
     display: grid;
@@ -94,13 +106,23 @@
     margin: 2px;
 }
 
+.panel p {
+    padding-left: 20px;
+    padding-right: 5px;
+}
+
+.panel a {
+    color: #000000;
+}
+
 .emoji {
     margin-bottom: -3px;
 }
 
 /* dropdown boxes end */
 
-.Title-app { 
+.Title-app {
+    height: auto;
     grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 3;
@@ -112,9 +134,11 @@
 }
 .Title-app h2 {
     margin-top: 2px;
-    color: green;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 .ContainerInfoApp {
+    height: auto;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
@@ -123,67 +147,99 @@
     border-radius: 5px;
 
     background-color: white;
+    padding: 20px;
+    font-size: 1.2em;
   
 }
 .ContainerImgApp {
+    height: auto;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 6;
     margin: 10px;
     border-radius: 5px;
+    justify-self: center;
 
-    background-color: white; 
+    background-color: transparent; 
 }
-
-
-@media screen and (max-width: 640px) {
-    .grid-container {
-        margin-top: -6px;
+.ImgApp {
+    width: 49%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
     
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+}
+@media screen and (max-width: 1170px) {
+    .grid-container {
+        margin-top: 48px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 300px 50px 300px 300px 48px;
     }
-    .TitleInfo {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 1;
-        grid-row-end: 2; 
+
+    @media screen and (max-width: 880px) {
+        .grid-container {
+            margin-top: 48px;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 400px 50px 300px 300px 48px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .grid-container {
+                margin-top: 48px;
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+            }
+
+            .TitleInfo {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            .ContainerInfo {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .Title-app {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            .ContainerImgApp {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+
+            .ContainerInfoApp {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+
+            .TitleReward {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 6;
+                grid-row-end: 7;
+            }
+
+            .ContainerReward {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 7;
+                grid-row-end: 9;
+            }
+        }
     }
-    .ContainerInfo {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .Title-app {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    .ContainerImgApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-    .ContainerInfoApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-    .TitleReward {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 6;
-        grid-row-end: 7;
-    }
-    .ContainerReward {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 7;
-        grid-row-end: 9; 
-    } 
 }
