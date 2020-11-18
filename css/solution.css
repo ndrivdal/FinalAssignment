@@ -51,6 +51,8 @@
     border-radius: 5px;
 
     background-color:white;
+    padding: 20px;
+    font-size: 1.2em;
 }
 .ContainerReward {
     display: grid;
@@ -126,6 +128,8 @@
     border-radius: 5px;
 
     background-color: white;
+    padding: 20px;
+    font-size: 1.2em;
   
 }
 .ContainerImgApp {
