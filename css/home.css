@@ -1,3 +1,7 @@
+body {
+    background-image: url("../images/blurry-background.png");
+}
+
 .containerFullScreen {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -28,6 +32,7 @@
     margin: 75px;
     background-color: white;
     height: min-content;
+    min-width: 250px;
     min-height: 200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -40,17 +45,121 @@
     color: black;
 }
 
+.titleLeft {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    align-self: end;
+    justify-self: center;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.titleRight {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+    align-self: end;
+    justify-self: center;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+}
+
+.detailedGoal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: end;
+    background-color: white;
+
+    min-height: 250px;
+    min-width: 250px;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.detailedBITE{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: end;
+    background-color: white;
+
+    min-height: 250px;
+    min-width: 250px;
+
+    margin-left: 75px;
+    margin-right: 75px;
+    margin-bottom: 100px;
+    border-radius: 5px;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
 
 
 
-@media screen and (max-width: 640px) {
+
+@media screen and (max-width: 900px) {
     .containerFullScreen {
-        grid-template-rows: 15% 1fr 1fr;
+        grid-template-rows: 15% 1fr 15% 1fr;
         min-height: calc(100vh - 96px);
     }
+
+    .titleLeft {
+        grid-column-start: 1;
+        grid-column-end: end;
+
+        align-self: center;
+        justify-self: center;
+    }
+
+    .detailedGoal {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .titleRight {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 3;
+        grid-row-end: 4;
+
+        align-self: center;
+        justify-self: center;
+    }
+
+    .detailedBITE {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 4;
+        grid-row-end: 6;
+
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 640px) {
 
     .goal {
         grid-column-start: 1;
         grid-column-end: end;
+        justify-self: center;
+        align-self: center;
     }
+
 }
