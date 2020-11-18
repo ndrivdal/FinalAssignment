@@ -116,3 +116,14 @@ body {
         padding: 0;
     }
 }
+
+@media screen and (max-width: 330px) {
+    .navbar-phone-bottom a {
+        display: inline-block;
+        font-size: 1em;
+        color: black;
+        text-align: center;
+        padding: 14px 10px;
+        text-decoration: none;
+    }
+}
