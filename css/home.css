@@ -19,17 +19,17 @@
 }
 
 .goal {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 5;
-    justify-self: start;
+    justify-self: end;
     align-self: end;
-    margin: 75px;
+    margin: 100px;
     background-color: white;
     height: min-content;
-    min-width: 250px;
-    min-height: 200px;
+    min-width: 300px;
+    min-height: 250px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5px;
@@ -75,6 +75,8 @@
     min-height: 250px;
     min-width: 250px;
 
+    padding: 15px 15px;
+
     margin-left: 75px;
     margin-right: 75px;
     margin-bottom: 100px;
@@ -92,6 +94,8 @@
 
     min-height: 250px;
     min-width: 250px;
+
+    padding: 15px 15px;
 
     margin-left: 75px;
     margin-right: 75px;
