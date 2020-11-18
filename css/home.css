@@ -188,6 +188,12 @@
 
 
 @media screen and (max-width: 900px) {
+    .containerFullScreenBackground {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 5vh 5% min-content 5% min-content 5vh;
+    }
+
     .containerFullScreen {
         grid-template-rows: 5% 1fr 5% 1fr;
         min-height: calc(100vh - 120px);
@@ -225,8 +231,8 @@
     .detailedGoal {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 4;
 
         margin-left: 15px;
         margin-right: 15px;
@@ -240,18 +246,18 @@
     .titleRight {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 4;
+        grid-row-end: 5;
 
         align-self: center;
-        justify-self: start;
+        justify-self: center;
         margin-left: 25px;
     }
 
     .detailedBITE {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 4;
+        grid-row-start: 5;
         grid-row-end: 6;
 
         margin-left: 15px;
