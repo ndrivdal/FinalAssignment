@@ -155,8 +155,14 @@
     grid-row-end: 6;
     margin: 10px;
     border-radius: 5px;
+    justify-self: center;
 
-    background-color: white; 
+    background-color: transparent; 
+}
+.ImgApp {
+    width: 49%;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+    
 }
 @media screen and (max-width: 1170px) {
     .grid-container {
