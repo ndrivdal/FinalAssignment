@@ -178,7 +178,7 @@
 @media screen and (max-width: 900px) {
     .containerFullScreen {
         grid-template-rows: 5% 1fr 5% 1fr;
-        min-height: calc(100vh - 96px);
+        min-height: calc(100vh - 144px);
     }
 
     .logoBig img {
@@ -281,6 +281,13 @@
 
     .goal p {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .containerFullScreen {
+        min-height: calc(100vh - 72px);
+        margin-top: 72px;
     }
 }
 
