@@ -22,7 +22,8 @@
 }
 .TitleInfo h2 {
     margin-top: 2px;
-    color: green;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 
 }
 .TitleReward {
@@ -37,7 +38,8 @@
 }
 .rewardtitle {
     margin-top: 5px;
-    color: green;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 
 .ContainerInfo {
@@ -112,7 +114,8 @@
 }
 .Title-app h2 {
     margin-top: 2px;
-    color: green;
+    color: white;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 .ContainerInfoApp {
     grid-column-start: 1;
