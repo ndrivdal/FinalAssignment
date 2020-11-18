@@ -18,18 +18,32 @@
     z-index: -1;
 }
 
-.goal {
-    grid-column-start: 2;
+.logoBig {
+    grid-column-start: 1;
     grid-column-end: 3;
     grid-row-start: 1;
-    grid-row-end: 5;
-    justify-self: end;
-    align-self: end;
-    margin: 100px;
-    background-color: white;
+    grid-row-end: 2;
+    justify-self: center;
+    align-self: start;
+    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+}
+
+.logoBig img {
+    width: 75vw;
+    max-width: 600px;
+    margin-bottom: 50px;
+}
+
+.goal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: end;
+    justify-self: center;
+    align-self: center;
+    background-color: inherit;
     height: min-content;
     min-width: 300px;
-    min-height: 250px;
     padding-left: 15px;
     padding-right: 15px;
     border-radius: 5px;
@@ -37,8 +51,18 @@
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
-.goal h1 {
-    color: black;
+.goal h2 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.goal p {
+    color: white;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
 }
 
 .titleLeft {
@@ -150,6 +174,15 @@
         grid-column-end: end;
         justify-self: center;
         align-self: center;
+    }
+
+    .goal h2 {
+        font-size: 2.5em;
+    }
+
+    .goal p {
+        color: white;
+        font-size: 30px;
     }
 
     .titleLeft {
