@@ -1,7 +1,3 @@
-body {
-    background-image: url("../images/blurry-background.png");
-}
-
 .containerFullScreen {
     display: grid;
     grid-template-columns: 1fr 1fr;
