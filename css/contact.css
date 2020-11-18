@@ -38,8 +38,7 @@
     
     width:auto;
     height:auto;
-    margin: 15px;
-    border-radius:30px;
+    margin: 10px;
   }
   
   ul{
@@ -57,7 +56,7 @@
   
   .company-info{
     background:#87D68D;
-      border-radius: 15px 15px 0 0;
+      border-radius: 5px 5px 0 0;
   }
   
   .company-info h3, .company-info ul{
@@ -68,7 +67,7 @@
   
   .contact{
     background:#fff;
-      border-radius: 0 0 15px 15px;
+      border-radius: 0 0 5px 5px;
   }
 
   .contact h3 {
@@ -80,7 +79,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:20px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   
   .contact form label{
@@ -117,7 +116,7 @@
   }
   
   .contact form button{
-    background:#8;
+    background:#888;
     border:0;
     text-transform: uppercase;
     border-radius: 5px;
@@ -141,11 +140,11 @@
       padding:2em;
     }
     .contact {
-        border-radius: 0 15px 15px 0;
+        border-radius: 0 5px 5px 0;
     }
 
       .company-info {
-          border-radius: 15px 0 0 15px;
+          border-radius: 5px 0 0 5px;
       }
 
     .company-info h3, .company-info ul, .brand{
