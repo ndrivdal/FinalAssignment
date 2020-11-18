@@ -108,6 +108,7 @@
 
 .panel p {
     padding-left: 20px;
+    padding-right: 5px;
 }
 
 .emoji {
@@ -160,65 +161,75 @@
 @media screen and (max-width: 1170px) {
     .grid-container {
         margin-top: 48px;
-    
+
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 300px 50px 300px 300px 48px;
     }
-@media screen and (max-width: 880px) {
-    .grid-container {
-        margin-top: 48px;
-        
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 50px 400px 50px 300px 300px 48px;
+
+    @media screen and (max-width: 880px) {
+        .grid-container {
+            margin-top: 48px;
+
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 400px 50px 300px 300px 48px;
         }
 
-@media screen and (max-width: 800px) {
-    .grid-container {
-        margin-top: 48px;
-    
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+        @media screen and (max-width: 800px) {
+            .grid-container {
+                margin-top: 48px;
+
+                grid-template-columns: 1fr;
+                grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+            }
+
+            .TitleInfo {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            .ContainerInfo {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .Title-app {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            .ContainerImgApp {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 4;
+                grid-row-end: 5;
+            }
+
+            .ContainerInfoApp {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 5;
+                grid-row-end: 6;
+            }
+
+            .TitleReward {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 6;
+                grid-row-end: 7;
+            }
+
+            .ContainerReward {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 7;
+                grid-row-end: 9;
+            }
+        }
     }
-    .TitleInfo {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 1;
-        grid-row-end: 2; 
-    }
-    .ContainerInfo {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }
-    .Title-app {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
-    .ContainerImgApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 4;
-        grid-row-end: 5;
-    }
-    .ContainerInfoApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 5;
-        grid-row-end: 6;
-    }
-    .TitleReward {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 6;
-        grid-row-end: 7;
-    }
-    .ContainerReward {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 7;
-        grid-row-end: 9; 
-    } 
 }
