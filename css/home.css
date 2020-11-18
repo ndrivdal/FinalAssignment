@@ -53,6 +53,7 @@
 
 .goal h2 {
     font-size: 3em;
+    max-font-size: 3em;
     color: white;
     text-align: center;
 }
@@ -60,6 +61,7 @@
 .goal p {
     color: white;
     font-size: 40px;
+    max-font-size: 40px;
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
@@ -89,6 +91,12 @@
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 
+.detailedGoal p {
+    letter-spacing: 1px;
+    line-height: 1.5;
+    margin: 0;
+}
+
 .detailedGoal {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -96,7 +104,7 @@
     grid-row-end: end;
     background-color: white;
 
-    min-height: 250px;
+    height: auto;
     min-width: 250px;
 
     padding: 15px 15px;
@@ -127,6 +135,11 @@
     border-radius: 5px;
 
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+}
+
+.detailedBITE p {
+    letter-spacing: 5px;
+    line-height: 1.5;
 }
 
 .titleSingle {
@@ -165,7 +178,7 @@
 
 @media screen and (max-width: 900px) {
     .containerFullScreen {
-        grid-template-rows: 15% 1fr 15% 1fr;
+        grid-template-rows: 5% 1fr 5% 1fr;
         min-height: calc(100vh - 96px);
     }
 
@@ -177,14 +190,12 @@
     }
 
     .goal h2 {
-        font-size: 10vw;
-        max-font-size: 3em;;
+        font-size: 2.5em;
     }
 
     .goal p {
         color: white;
-        font-size: 5vw;
-        max-font-size: 30px;
+        font-size: 20px;
     }
 
     .titleLeft {
@@ -205,6 +216,11 @@
         margin-right: 15px;
     }
 
+    .detailedGoal p {
+        letter-spacing: 0px;
+        line-height: 1.5;
+    }
+
     .titleRight {
         grid-column-start: 1;
         grid-column-end: end;
@@ -212,7 +228,8 @@
         grid-row-end: 4;
 
         align-self: center;
-        justify-self: center;
+        justify-self: start;
+        margin-left: 25px;
     }
 
     .detailedBITE {
