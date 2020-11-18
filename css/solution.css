@@ -87,6 +87,7 @@
 
 .active, .dropdown:hover {
     background-color: #93B48B;
+    font-weight: bold;
 }
 .dropdown_input {
     display: none;
