@@ -14,10 +14,7 @@
     min-height: calc(100vh + 48px);
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 50px 250px 50px 300px 300px 48px;
-
-    background-image: url("../images/solutions-background.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
+    
     margin-top: 48px;
 }
 
