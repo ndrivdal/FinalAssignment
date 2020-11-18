@@ -40,7 +40,7 @@
     grid-row-end: 2;
     margin: 10px;
     border-radius: 5px;
-    
+
     background-color: transparent;
 }
 
@@ -166,11 +166,12 @@
 
     background-color: transparent; 
 }
+
 .ImgApp {
     width: 49%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
-    
 }
+
 @media screen and (max-width: 1170px) {
     .grid-container {
         margin-top: 48px;
