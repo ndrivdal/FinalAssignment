@@ -13,7 +13,7 @@
     display: grid;
     min-height: calc(100vh + 48px);
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 250px 50px 400px 200px 48px;
+    grid-template-rows: 50px 250px 50px 40px 200px 48px;
     margin-top: 48px;
 }
 
@@ -40,18 +40,18 @@
     grid-row-end: 2;
     margin: 10px;
     border-radius: 5px;
-    
+
     background-color: transparent;
 }
-
-
 .rewardtitle {
-    margin-bottom: 1px;
+    margin-top: 5px;
     color: white;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 
 .ContainerInfo {
+    height:500px;
+   max-height: 500px;
     height: auto;
     grid-column-start: 1;
     grid-column-end: 3;
@@ -89,7 +89,6 @@
 
 .active, .dropdown:hover {
     background-color: #93B48B;
-    font-weight: bold;
 }
 .dropdown_input {
     display: none;
@@ -141,11 +140,12 @@
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 .ContainerInfoApp {
-    height: auto;
+    height:600px;
+   max-height: 590px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 4;
-    grid-row-end: 6;
+    grid-row-end:end;
     margin: 10px;
     border-radius: 5px;
 
@@ -153,6 +153,11 @@
     padding: 20px;
     font-size: 1.2em;
   
+}
+
+
+.ContainerInfoApp p{
+text-align: center;
 }
 .ContainerImgApp {
     height: auto;
