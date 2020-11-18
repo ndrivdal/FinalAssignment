@@ -64,7 +64,7 @@ body{
     text-align: center;
 }
 
-p strong{
+.footer p strong{
     font-size: 1.2em;
     color: #254228;
 }
