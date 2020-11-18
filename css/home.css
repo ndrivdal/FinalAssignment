@@ -29,7 +29,8 @@
 }
 
 .logoBig img {
-    height: 300px;
+    width: 75vw;
+    max-width: 600px;
     margin-bottom: 50px;
 }
 
