@@ -145,6 +145,13 @@
         min-height: calc(100vh - 96px);
     }
 
+    .goal {
+        grid-column-start: 1;
+        grid-column-end: end;
+        justify-self: center;
+        align-self: center;
+    }
+
     .titleLeft {
         grid-column-start: 1;
         grid-column-end: end;
@@ -187,15 +194,4 @@
         margin-left: 15px;
         margin-right: 15px;
     }
-}
-
-@media screen and (max-width: 640px) {
-
-    .goal {
-        grid-column-start: 1;
-        grid-column-end: end;
-        justify-self: center;
-        align-self: center;
-    }
-
 }
