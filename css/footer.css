@@ -29,8 +29,8 @@ body{
 .createdBy { 
     grid-area: createdBy; 
     padding-left: 3vw;
-    border-right: 1px #3d434b dashed;
-    border-top: 3px #3d434b dashed;
+    border-right: 1px #3d434b solid;
+    border-top: 1px #3d434b solid;
 }
 
 .createdBy p {
@@ -40,7 +40,7 @@ body{
 .contactFooter { 
     grid-area: contactFooter; 
     padding-left: 3vw;
-    border-top: 3px #3d434b dashed;
+    border-top: 1px #3d434b solid;
 }
   
 .someIcons { 
