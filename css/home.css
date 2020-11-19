@@ -2,9 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15% 1fr 1fr;
-    min-height: calc(100vh - 48px);
+    min-height: 100vh;
     width: 100vw;
-    margin-top: 48px;
 }
 
 .containerFullScreenBackground {
@@ -25,7 +24,6 @@
     background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
     background-size: cover;
     background-position: center;
-
     z-index: -1;
 }
 
@@ -68,7 +66,6 @@
 
 .goal h2 {
     font-size: 3em;
-    max-font-size: 3em;
     color: white;
     text-align: center;
 }
@@ -76,7 +73,6 @@
 .goal p {
     color: white;
     font-size: 40px;
-    max-font-size: 40px;
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
@@ -96,79 +92,45 @@
     background-color: rgba(44, 49, 55, 0.5);
 }
 
-.titleLeft {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    align-self: end;
-    justify-self: center;
-    color: white;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
-}
-
-.titleRight {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    align-self: end;
-    justify-self: center;
-    color: white;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
-}
-
-.detailedGoal p {
-    letter-spacing: 1px;
-    line-height: 1.5;
-    margin: 0;
-}
-
 .detailedGoal {
     grid-column-start: 1;
     grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    background-color: white;
+    grid-row-start: 1;
+    grid-row-end: end;
 
-    height: auto;
-    min-width: 250px;
+    text-align: center;
+    align-self: center;
 
-    padding: 15px 15px;
-
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .detailedBITE{
     grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    background-color: white;
+    grid-row-start: 1;
+    grid-row-end: end;
 
-    min-height: 250px;
-    min-width: 250px;
+    text-align: center;
+    align-self: center;
 
-    padding: 15px 15px;
-
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.detailedBITE p {
-    letter-spacing: 5px;
-    line-height: 1.5;
+.detailedGoal h2, .detailedBITE h2 {
+    font-size: 2em;
+    color: darkslategray;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.detailedGoal p, .detailedBITE p {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin: 0 0 10px;
 }
 
 .titleSingle {
@@ -186,35 +148,54 @@
 .infoBox {
     grid-column-start: 1;
     grid-column-end: end;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: end;
-    background-color: white;
 
-    min-height: 250px;
-    min-width: 250px;
+    text-align: center;
+    align-self: center;
 
-    padding: 15px 15px;
+    max-width: 100%;
 
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 100px;
+
+    margin-left: 150px;
+    margin-right: 150px;
     border-radius: 5px;
 
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
+.infoBox h2 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
 
+.infoBox p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.infoBox p.thin {
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin: 30px;
+    font-variant: all-small-caps;
+}
 
 @media screen and (max-width: 900px) {
     .containerFullScreenBackground {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5vh 5% min-content 5% min-content 5vh;
+        grid-template-rows: 5vh 1fr 1fr 5vh;
     }
 
     .containerFullScreen {
         grid-template-rows: 5% 1fr 5% 1fr;
-        min-height: calc(100vh - 120px);
     }
 
     .logoBig img {
@@ -238,45 +219,30 @@
         font-size: 30px;
     }
 
-    .titleLeft {
-        grid-column-start: 1;
-        grid-column-end: end;
-
-        align-self: center;
-        justify-self: center;
-    }
-
     .detailedGoal {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        align-self: center;
 
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .detailedGoal p {
+    .detailedGoal p, .detailedBITE p {
         letter-spacing: 0;
         line-height: 1.5;
-    }
-
-    .titleRight {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 4;
-        grid-row-end: 5;
-
-        align-self: center;
-        justify-self: center;
-        margin-left: 25px;
     }
 
     .detailedBITE {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-row-start: 3;
+        grid-row-end: end;
+
+        align-self: center;
 
         margin-left: 15px;
         margin-right: 15px;
@@ -285,6 +251,17 @@
     .infoBox {
         margin-left: 15px;
         margin-right: 15px;
+        margin-top: 20px;
+    }
+
+    .infoBox h2 {
+        font-size: 2.5em;
+    }
+
+    .infoBox p {
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 1.25;
     }
 }
 
@@ -302,6 +279,16 @@
     .goal p {
         font-size: 20px;
     }
+
+    .infoBox h2 {
+        font-size: 2.5em;
+    }
+
+    .infoBox p {
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 1.25;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -318,12 +305,15 @@
     .goal p {
         font-size: 20px;
     }
+
+    .infoBox h2 {
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .containerFullScreen {
-        min-height: calc(100vh - 72px);
-        margin-top: 48px;
+        min-height: 100vh;
     }
 }
 
@@ -335,6 +325,10 @@
     }
 
     .goal p {
+        font-size: 18px;
+    }
+
+    .infoBox p.thin {
         font-size: 18px;
     }
 }
