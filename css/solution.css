@@ -296,15 +296,19 @@ a {
 
 @media screen and (max-width: 500px){
     .ImgApp2 {
-        width: 32vw;
+        width: 36vw;
         padding: 1vw;
-        padding-right: 4vw;
+        padding-right: 5vw;
+    }
+    .ContainerApp{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 @media screen and (max-width: 400px){
     .ImgApp2 {
-        width: 30vw;
+        width: 34vw;
     }
 }
 
