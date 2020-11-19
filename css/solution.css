@@ -100,6 +100,7 @@
 
 .active, .dropdown:hover {
     background-color: #93B48B;
+    font-weight: bold;
 }
 .dropdown_input {
     display: none;
@@ -163,7 +164,7 @@
     background-color: white;
     padding: 20px;
     font-size: 1.2em;
-  
+
 }
 
 
@@ -180,7 +181,7 @@ text-align: center;
     border-radius: 5px;
     justify-self: center;
 
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .ImgApp {
@@ -252,32 +253,61 @@ text-align: center;
         grid-row-end: 3;
     }
 
-    .Title-app {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
-    }
+    @media screen and (max-width: 880px) {
+        .grid-container {
+            margin-top: 48px;
 
-    .ContainerImgApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 5;
-        grid-row-end: 5;
-    }
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 50px 400px 50px 300px 300px 48px;
+        }
 
-    .ContainerInfoApp {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 4;
-        grid-row-end: 4;
+        @media screen and (max-width: 800px) {
+            .grid-container {
+                margin-top: 48px;
 
-        height:430px;
-        max-height:500px;
-        max-width:auto;
-    }
+                grid-template-columns: 1fr;
+                grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+            }
 
-            
+            .TitleInfo {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 1;
+                grid-row-end: 2;
+            }
+
+            .ContainerInfo {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 2;
+                grid-row-end: 3;
+            }
+
+            .Title-app {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 3;
+                grid-row-end: 4;
+            }
+
+            .ContainerImgApp {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 5;
+                grid-row-end: 5;
+            }
+
+            .ContainerInfoApp {
+                grid-column-start: 1;
+                grid-column-end: end;
+                grid-row-start: 4;
+                grid-row-end: 4;
+
+                height:430px;
+                max-height:500px;
+            }
+
+
     .TitleReward {
         grid-column-start: 1;
         grid-column-end: end;
