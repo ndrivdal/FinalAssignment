@@ -52,8 +52,12 @@
 
 .goal h2 {
     font-size: 3em;
-    color: white;
     text-align: center;
+}
+
+.goal h2 a {
+    text-decoration: none;
+    color: white;
 }
 
 .goal p {
