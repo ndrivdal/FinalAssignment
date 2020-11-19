@@ -11,6 +11,8 @@ body {
 /* --- NAVBAR --- */
 /* NORMAL SCREEN */
 .navbar-normal {
+    grid-column-start: 1;
+    grid-column-start: end;
     display: inline-block;
     position: fixed;
     background-color: #87D68D;
