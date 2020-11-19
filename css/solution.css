@@ -15,8 +15,67 @@
     margin-top: 48px;
 
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 200px 1fr 300px 1fr 300px;
+    grid-template-rows: 200px 1fr 100px 1fr 100px;
+
 }
+.TitleOS {
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.ContainerInfo {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    background-color: white;
+
+}
+.ContainerApp {
+    grid-column-start: 3;
+    grid-column-end: end;
+    grid-row-start: 2;
+    grid-row-end: 3;
+
+    background-color: white;
+}
+.ContainerRewards {
+    grid-column-start: 1;
+    grid-column-end: end;
+    grid-row-start: 4;
+    grid-row-end: 5;
+
+    background-color: white;
+
+}
+
+.ImgApp2 {
+    width: 20%;
+    float: right;
+
+    padding: 20px;
+}
+img.AppLinkImg {
+    margin-left: 110px;
+    margin-top: 50px;
+    height: 80px;
+    max-width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
 .h1OS {
