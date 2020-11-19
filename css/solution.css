@@ -99,12 +99,41 @@
 }
 
 .ContainerRewards {
+    display: grid;
     grid-column-start: 1;
     grid-column-end: end;
     grid-row-start: 4;
     grid-row-end: 5;
-    justify-self: center;
+
+    margin: 20px;
+
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    
+    
 }
+
+.weekly {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.monthly {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+}
+.yearly {
+    grid-column-start: 3;
+    grid-column-end: end;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
+} 
 .ContainerRewards h2 {
     color: white;
 }
@@ -133,6 +162,9 @@ img.AppLinkImg {
     border: none;
     outline: none;
     transition: 0.4s;
+    display: list-item;
+    list-style: none;
+    width: 80%;
 }
 
 .active, .dropdown:hover {
@@ -154,12 +186,16 @@ img.AppLinkImg {
 .panel {
     background-color: #F7FFF6;
     border-radius: 5px;
-    margin: 2px;
+    margin-right: 18px;
+    min-height: 50px;
+    padding: 2px;
 }
 
 .panel p {
+    padding-top: 5px;
     padding-left: 20px;
     padding-right: 5px;
+    margin: 0;
 }
 
 .panel a {
@@ -171,14 +207,35 @@ img.AppLinkImg {
 }
 
 
+@media screen and (max-width: 800px) {
+    .ContainerRewards {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; 
+    }
+    .weekly {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;  
+    }
+    .monthly {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .yearly {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 
 
-
-
-
-
-
-
+    .TitleOS img {
+        width: 450px;
+    }
+}
 
 
 /*
