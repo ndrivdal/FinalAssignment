@@ -118,6 +118,7 @@
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-self: center;
 
 }
 .monthly {
@@ -125,6 +126,7 @@
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-self: center;
 
 }
 .yearly {
@@ -132,23 +134,33 @@
     grid-column-end: end;
     grid-row-start: 1;
     grid-row-end: 2;
+    justify-self: center;
 
 } 
 .ContainerRewards h2 {
     color: white;
-    padding-left: 30%;
+    text-align: center;
 }
 
 .weeklyImg {
     height: auto;
-    width: 200px;
+    width: 150px;
     border-radius: 15px;
+    margin: 10px;
 }
 
 .monthlyImg {
     border-radius: 15px;
     height: auto;
-    width: 200px;
+    width: 150px;
+    margin: 10px;
+}
+
+.yearlyImg {
+    border-radius: 15px;
+    height: auto;
+    width: 150px;
+    margin: 10px;
 }
 
 
@@ -171,7 +183,7 @@ img.AppLinkImg {
 }
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 600px) {
     .ContainerRewards {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr; 
