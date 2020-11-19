@@ -9,6 +9,16 @@
     z-index: -1;
 }
 
+.Increasefont{
+    float:right;
+    display: inline-block;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
 .ContainerFullScreenOS {
     display: grid;
     min-height: calc(100vh + 48px);
@@ -432,5 +442,6 @@ img.AppLinkImg {
         margin-top: 72px;
     }
 }
+    
 
 */
