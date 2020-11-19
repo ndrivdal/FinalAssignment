@@ -38,10 +38,7 @@
     align-self: center;
     height: min-content;
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
     margin-bottom: 135px;
-
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 .TitleOS img {
@@ -70,6 +67,7 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+
 }
 
 .ContainerApp {
