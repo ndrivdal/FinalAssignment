@@ -78,6 +78,7 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 .ContainerInfo h2, .ContainerApp h2 {
     font-size: 2em;
@@ -93,28 +94,16 @@
     line-height: 1.7;
     margin: 0 0 10px;
 }
-.emptyspace {
-    grid-column-start: 1;
-    grid-column-end: end;
-    grid-row-start: 3;
-    grid-row-end: 4;
-    background-color: rgba(44, 49, 55, 0.5);   
-}
+
 .ContainerRewards {
     grid-column-start: 1;
     grid-column-end: end;
     grid-row-start: 4;
     grid-row-end: 5;
-
-    background-color: rgba(44, 49, 55, 0.5);
-
+    justify-self: center;
 }
-.emptyspace2 {
-    grid-column-start: 1;
-    grid-column-end: end;
-    grid-row-start: 5;
-    grid-row-end: 6;
-    background-color: rgba(44, 49, 55, 0.5);   
+.ContainerRewards h2 {
+    color: white;
 }
 
 .ImgApp2 {
