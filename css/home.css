@@ -96,18 +96,6 @@
     background-color: rgba(44, 49, 55, 0.5);
 }
 
-.titleRight {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    align-self: end;
-    justify-self: center;
-    color: white;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
-}
-
 .detailedGoal {
     grid-column-start: 1;
     grid-column-end: 2;
@@ -121,44 +109,32 @@
     margin-right: 50px;
 }
 
-.detailedGoal h2 {
+.detailedBITE{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: end;
+
+    text-align: center;
+    align-self: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.detailedGoal h2, .detailedBITE h2 {
     font-size: 2em;
     color: darkslategray;
     margin-top: 0;
     margin-bottom: 50px;
 }
 
-.detailedGoal p {
+.detailedGoal p, .detailedBITE p {
     font-weight: 700;
     font-size: 17px;
     letter-spacing: 2px;
     line-height: 1.7;
     margin: 0 0 10px;
-}
-
-.detailedBITE{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 5;
-    background-color: white;
-
-    min-height: 250px;
-    min-width: 250px;
-
-    padding: 15px 15px;
-
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
-}
-
-.detailedBITE p {
-    letter-spacing: 10px;
-    line-height: 1.5;
 }
 
 .titleSingle {
@@ -199,7 +175,7 @@
     .containerFullScreenBackground {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5vh 5% min-content 5% min-content 5vh;
+        grid-template-rows: 5vh 1fr 1fr 5vh;
     }
 
     .containerFullScreen {
@@ -228,45 +204,30 @@
         font-size: 30px;
     }
 
-    .titleLeft {
-        grid-column-start: 1;
-        grid-column-end: end;
-
-        align-self: center;
-        justify-self: center;
-    }
-
     .detailedGoal {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: 4;
+        grid-row-start: 2;
+        grid-row-end: 3;
+
+        align-self: center;
 
         margin-left: 15px;
         margin-right: 15px;
     }
 
-    .detailedGoal p {
+    .detailedGoal p, .detailedBITE p {
         letter-spacing: 0;
         line-height: 1.5;
-    }
-
-    .titleRight {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 4;
-        grid-row-end: 5;
-
-        align-self: center;
-        justify-self: center;
-        margin-left: 25px;
     }
 
     .detailedBITE {
         grid-column-start: 1;
         grid-column-end: end;
-        grid-row-start: 5;
-        grid-row-end: 6;
+        grid-row-start: 3;
+        grid-row-end: end;
+
+        align-self: center;
 
         margin-left: 15px;
         margin-right: 15px;
