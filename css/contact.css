@@ -64,7 +64,7 @@
   }
   
   .company-info{
-    background:#87D68D;
+    background:#BCEBCB; /*#87D68D eller denne?*/
       border-radius: 5px 5px 0 0;
   }
   
@@ -175,4 +175,9 @@
         width:auto;
         height:auto;
     }
+
+    .titleContact{
+      justify-self: center;
+      margin-left: 0;
+    } 
 }
