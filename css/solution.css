@@ -191,7 +191,7 @@ text-align: center;
 .ImgApp2 {
     width: 20%;
     float: right;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+
     padding: 20px;
 }
 
@@ -214,6 +214,7 @@ text-align: center;
     padding-right: 40px;
     font-size: 1.2em;
 }
+
 
 @media screen and (max-width: 1170px) {
     .grid-container {
