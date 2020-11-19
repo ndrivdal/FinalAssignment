@@ -30,8 +30,8 @@
 
 }
 .TitleOS {
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 1;
+    grid-column-end: end;
     grid-row-start: 1;
     grid-row-end: 2;
     justify-self: center;
@@ -40,6 +40,9 @@
     text-align: center;
     padding-left: 15px;
     padding-right: 15px;
+    margin-bottom: 135px;
+
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 .TitleOS img {
     width: 500px;
