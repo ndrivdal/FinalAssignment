@@ -9,7 +9,7 @@
       ". someIcons someIcons ."
       "copyRight copyRight copyRight copyRight";
     
-    background-color: #687381;
+    background-color: #AEAEAE;
     font-family: 'Karla', sans-serif;
 }
   
@@ -61,7 +61,7 @@
 
 .footer p strong{
     font-size: 1.2em;
-    color: #254228;
+    color: black;
 }
 
 .footer a{
