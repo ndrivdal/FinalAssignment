@@ -99,6 +99,7 @@
 
 .active, .dropdown:hover {
     background-color: #93B48B;
+    font-weight: bold;
 }
 .dropdown_input {
     display: none;
@@ -247,7 +248,6 @@ text-align: center;
 
                 height:430px;
                 max-height:500px;
-                max-width:auto;
             }
 
             
