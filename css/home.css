@@ -9,6 +9,11 @@
     background-color: rgba(44, 49, 55, 0.5);
 }
 
+.containerFullScreen.noMargin {
+    margin-top: 0;
+}
+
+
 .containerFullScreenBackground {
     display: grid;
     grid-template-columns: 1fr 1fr;
