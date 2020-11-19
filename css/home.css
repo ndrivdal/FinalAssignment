@@ -179,6 +179,13 @@
     text-align: center;
 }
 
+.infoBox p.thin {
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin: 30px;
+    font-variant: all-small-caps;
+}
 
 @media screen and (max-width: 900px) {
     .containerFullScreenBackground {
@@ -318,6 +325,10 @@
     }
 
     .goal p {
+        font-size: 18px;
+    }
+
+    .infoBox p.thin {
         font-size: 18px;
     }
 }
