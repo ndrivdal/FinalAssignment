@@ -172,10 +172,12 @@
     padding: 20px;
 }
 img.AppLinkImg {
-    margin-left: 110px;
-    margin-top: 50px;
     height: 80px;
-    max-width: 100%;
+    width: auto;
+}
+
+a {
+    text-decoration: none;
 }
 
 .emoji {
