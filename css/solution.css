@@ -67,7 +67,12 @@
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+    
 
+}
+
+.ContainerInfo h2{
+    text-align: center;
 }
 
 .ContainerApp {
@@ -307,7 +312,15 @@ a {
     .ContainerInfo{
         margin-left: 20px;
         margin-right: 20px;
+        text-align: center;
+      
     }
+
+    .ContainerInfo h2{
+        text-align: center;
+    }
+
+
 }
 
 @media screen and (max-width: 400px){
