@@ -136,7 +136,22 @@
 } 
 .ContainerRewards h2 {
     color: white;
+    padding-left: 30%;
 }
+
+.weeklyImg {
+    height: auto;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.monthlyImg {
+    border-radius: 15px;
+    height: auto;
+    width: 200px;
+}
+
+
 
 .ImgApp2 {
     width: 20%;
@@ -149,57 +164,6 @@ img.AppLinkImg {
     margin-top: 50px;
     height: 80px;
     max-width: 100%;
-}
-
-.dropdown {
-    margin: 2px;
-    border-radius: 5px;
-    background-color: #BCEBCB;
-    color: #000000;
-    cursor: pointer;
-    padding:  18px;
-    text-align: center;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-    display: list-item;
-    list-style: none;
-    width: 80%;
-}
-
-.active, .dropdown:hover {
-    background-color: #93B48B;
-    font-weight: bold;
-}
-.dropdown_input {
-    display: none;
-}
-.dropdown_input:not(:checked) + .panel {
-    margin: 2px;
-    border-radius: 5px;
-    padding: 0 18px;
-    background-color: #F7FFF6;
-    display: none;
-    overflow: hidden;
-}
-
-.panel {
-    background-color: #F7FFF6;
-    border-radius: 5px;
-    margin-right: 18px;
-    min-height: 50px;
-    padding: 2px;
-}
-
-.panel p {
-    padding-top: 5px;
-    padding-left: 20px;
-    padding-right: 5px;
-    margin: 0;
-}
-
-.panel a {
-    color: #000000;
 }
 
 .emoji {
