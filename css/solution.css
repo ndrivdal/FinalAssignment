@@ -9,6 +9,16 @@
     z-index: -1;
 }
 
+.ContainerFullScreenOS {
+    display: grid;
+    min-height: calc(100vh + 48px);
+    margin-top: 48px;
+
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 200px 1fr 300px 1fr 300px;
+}
+
+/*
 .h1OS {
     color: white;
     text-align: center;
@@ -133,7 +143,7 @@
     margin-bottom: -3px;
 }
 
-/* dropdown boxes end */
+
 
 .Title-app {
     height: auto;
@@ -363,3 +373,5 @@ img.AppLinkImg {
         margin-top: 72px;
     }
 }
+
+*/
