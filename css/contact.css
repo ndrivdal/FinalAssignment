@@ -107,7 +107,7 @@
   .contact form button{
     width:100%;
     padding:1em;
-    border:1px solid #87D68D;
+    border:1px solid #BCEBCB;
   }
 
   .contact form input{
@@ -132,7 +132,7 @@
   }
   
   .contact form button:hover,.contact form button:focus{
-    background:#87D68D;
+    background:#BCEBCB;
     color: black;
     outline:0;
     transition: background-color 2s ease-out;
