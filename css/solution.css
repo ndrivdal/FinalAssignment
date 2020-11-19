@@ -139,6 +139,20 @@
     padding-left: 30%;
 }
 
+.weeklyImg {
+    height: auto;
+    width: 200px;
+    border-radius: 15px;
+}
+
+.monthlyImg {
+    border-radius: 15px;
+    height: auto;
+    width: 200px;
+}
+
+
+
 .ImgApp2 {
     width: 20%;
     float: right;
