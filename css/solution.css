@@ -27,6 +27,7 @@
     grid-template-rows: 50px 250px 50px 400px 200px 48px;
 }
 
+
 .TitleInfo {
     grid-column-start: 1;
     grid-column-end: end;
@@ -163,7 +164,7 @@
     background-color: white;
     padding: 20px;
     font-size: 1.2em;
-  
+
 }
 
 
@@ -180,13 +181,40 @@ text-align: center;
     border-radius: 5px;
     justify-self: center;
 
-    background-color: transparent; 
+    background-color: transparent;
 }
 
 .ImgApp {
     width: 49%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
+.ImgApp2 {
+    width: 20%;
+    float: right;
+
+    padding: 20px;
+}
+
+.ContainerInfo2 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 7;
+    margin: 10px;
+    border-radius: 5px;
+
+    background-color: white;
+}
+.ContainerInfo2 h2 {
+    text-align: center;
+}
+.ContainerInfo2 p {
+    padding: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.2em;
+}
+
 
 @media screen and (max-width: 1170px) {
     .grid-container {
@@ -194,6 +222,36 @@ text-align: center;
 
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 50px 300px 50px 300px 300px 48px;
+    }
+}
+@media screen and (max-width: 880px) {
+    .grid-container {
+        margin-top: 48px;
+
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 400px 50px 300px 300px 48px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .grid-container {
+        margin-top: 48px;
+
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+    }
+
+    .TitleInfo {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .ContainerInfo {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
     @media screen and (max-width: 880px) {
@@ -250,23 +308,35 @@ text-align: center;
                 max-height:500px;
             }
 
-            
-            .TitleReward {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 6;
-                grid-row-end: 7;
-            }
 
-            .ContainerReward {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 7;
-                grid-row-end: end;
-            }
-        }
+    .TitleReward {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 6;
+        grid-row-end: 7;
+    }
+
+    .ContainerReward {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 7;
+        grid-row-end: end;
+    }
+    .TitleInfo h2 {
+        text-align: center;
+    }
+    .Title-app h2 {
+        text-align: center;
+    }
+    .TitleReward h2 {
+        text-align: center;
+    }
+    .rewardtitle {
+        text-align: center;
     }
 }
+
+
 
 @media screen and (max-width: 640px) {
     .h1OS {
