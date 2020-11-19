@@ -96,19 +96,6 @@
     background-color: rgba(44, 49, 55, 0.5);
 }
 
-.titleLeft {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-
-    font-size: 1.5em;
-
-    align-self: end;
-    justify-self: center;
-    color: darkslategray;
-}
-
 .titleRight {
     grid-column-start: 2;
     grid-column-end: 3;
@@ -121,25 +108,32 @@
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
 }
 
+.detailedGoal {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: end;
+
+    text-align: center;
+    align-self: center;
+
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.detailedGoal h2 {
+    font-size: 2em;
+    color: darkslategray;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
 .detailedGoal p {
+    font-weight: 700;
     font-size: 17px;
     letter-spacing: 2px;
     line-height: 1.7;
     margin: 0 0 10px;
-}
-
-.detailedGoal {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 3;
-    grid-row-end: 5;
-
-    text-align: center;
-    font-weight: 700;
-
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 100px;
 }
 
 .detailedBITE{
