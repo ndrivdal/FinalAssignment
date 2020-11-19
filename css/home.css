@@ -2,9 +2,8 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 15% 1fr 1fr;
-    min-height: calc(100vh - 48px);
+    min-height: 100vh;
     width: 100vw;
-    margin-top: 48px;
 }
 
 .containerFullScreenBackground {
@@ -68,7 +67,6 @@
 
 .goal h2 {
     font-size: 3em;
-    max-font-size: 3em;
     color: white;
     text-align: center;
 }
@@ -76,7 +74,6 @@
 .goal p {
     color: white;
     font-size: 40px;
-    max-font-size: 40px;
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
@@ -152,23 +149,36 @@
 .infoBox {
     grid-column-start: 1;
     grid-column-end: end;
-    grid-row-start: 2;
+    grid-row-start: 1;
     grid-row-end: end;
-    background-color: white;
 
-    min-height: 250px;
-    min-width: 250px;
+    text-align: center;
+    align-self: center;
 
-    padding: 15px 15px;
+    max-width: 100%;
 
-    margin-left: 75px;
-    margin-right: 75px;
-    margin-bottom: 100px;
+
+    margin-left: 150px;
+    margin-right: 150px;
     border-radius: 5px;
 
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
+.infoBox h2 {
+    font-size: 3em;
+    color: white;
+    text-align: center;
+}
+
+.infoBox p {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-align: center;
+}
 
 
 @media screen and (max-width: 900px) {
@@ -180,7 +190,6 @@
 
     .containerFullScreen {
         grid-template-rows: 5% 1fr 5% 1fr;
-        min-height: calc(100vh - 120px);
     }
 
     .logoBig img {
@@ -236,6 +245,17 @@
     .infoBox {
         margin-left: 15px;
         margin-right: 15px;
+        margin-top: 20px;
+    }
+
+    .infoBox h2 {
+        font-size: 2.5em;
+    }
+
+    .infoBox p {
+        font-size: 18px;
+        letter-spacing: 0;
+        line-height: 1.25;
     }
 }
 
@@ -253,6 +273,16 @@
     .goal p {
         font-size: 20px;
     }
+
+    .infoBox h2 {
+        font-size: 2.5em;
+    }
+
+    .infoBox p {
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 1.25;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -269,12 +299,15 @@
     .goal p {
         font-size: 20px;
     }
+
+    .infoBox h2 {
+        font-size: 1.7em;
+    }
 }
 
 @media screen and (max-width: 640px) {
     .containerFullScreen {
-        min-height: calc(100vh - 72px);
-        margin-top: 48px;
+        min-height: 100vh;
     }
 }
 
