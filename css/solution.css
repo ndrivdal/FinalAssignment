@@ -167,10 +167,10 @@
 
 }
 
-
 .ContainerInfoApp p{
 text-align: center;
 }
+
 .ContainerImgApp {
     height: auto;
     grid-column-start: 2;
@@ -193,6 +193,22 @@ text-align: center;
     float: right;
 
     padding: 20px;
+}
+
+img.AppLinkImg {
+    margin-left: 110px;
+    margin-top: 50px;
+    height: 80px;
+    max-width: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    img.AppLinkImg {
+        height: 60px;
+        margin-left: 70px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
 }
 
 .ContainerInfo2 {
