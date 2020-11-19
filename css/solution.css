@@ -187,11 +187,15 @@ img.AppLinkImg {
     background-color: #F7FFF6;
     border-radius: 5px;
     margin: 2px;
+    width: 89%;
+    height: 50px;
 }
 
 .panel p {
+    padding-top: 5px;
     padding-left: 20px;
     padding-right: 5px;
+    margin: 0;
 }
 
 .panel a {
@@ -201,15 +205,6 @@ img.AppLinkImg {
 .emoji {
     margin-bottom: -3px;
 }
-
-
-
-
-
-
-
-
-
 
 
 
