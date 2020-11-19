@@ -17,6 +17,9 @@
     <a href="../index.html">HOME</a>
     <a class="navactive">OUR SOLUTION</a>
     <a href="../contact/index.html">CONTACT</a>
+    <input type = "button" value = "small" class ="Increasefont" id = "small"/> 
+    <input type = "button" value = "normal" class ="Increasefont"id = "normal"/> 
+    <input type = "button" value = "Large" class ="Increasefont" id = "large"/>
 </div>
 <div class="navbar-phone-top">
     <a class="noPadding" href="../index.html"><img class="logo" src="../images/logo500.png" alt="BiTe Logo"></a>
@@ -40,18 +43,19 @@
             <br> <br> Connect your BITE-account with your Oslo-, Trondheim- or Bergen-bysykkel account to start collecting your kilometers. Check out “rewards” for our the different prizes.
         </p>
     </div> -->
+    
 
-    <div class="ContainerInfo2">
-        <h2>BITE</h2>
-        <p>
+    <div class="ContainerInfo2" id= "content">
+        <h2 >BITE</h2>
+        <p> 
             Bite is an initiative that rewards you for biking, with weekly, monthly and yearly prizes. The purpose of this initiative is to fight climate change and solve the increasing problem of air-quality.
             We are currently only located in Oslo, Trondheim and Bergen, although we plan on expanding to other cities and countries.  
             <br> <br> Connect your BITE-account with your Oslo-, Trondheim- or Bergen-bysykkel account to start collecting your kilometers. Check out “rewards” for our the different prizes. 
         </p>
-        <h2>Download our app</h2>
+        <h2 id="content2">Download our app</h2>
         <img class="ImgApp2" src="../images/AppHomeScreen.png" alt="Picture of the app's home screen.">
         <img class="ImgApp2" src="../images/AppCoupon.png" alt="Picture of the app's coupon screen.">  
-        <p>
+        <p id="content3">
             Bite is an app thats connects to your bike and track how far you ride. <br>
             This app is one step further to stop climate changes! The goal is adapt and reduce the consequences of climate change by cycling more. 
             With the app, you can get special rewards such as discounts just by cycling!  <br>
@@ -59,7 +63,7 @@
             Download our app “BITE” to connect with other parties, check your statistics and collect your rewards. The app can be downloaded from Apple app store or google play store.<br>
         </p>
     </div>
-    <div class="TitleReward rewardtitle">
+    <div class="TitleReward rewardtitle" id="content">
         <h2><img src="../images/3rd-place-medal_1f949.png" height="16" width="16" alt="3rdPlace"/>
             Weekly rewards</h2>
     </div>
@@ -247,6 +251,26 @@
         <p>Copyright © 2020 <br>
             All Rights Reserved</p>
     </div>
+
+
+    <script>
+   var content = document.getElementById("content");
+
+var smallButton = document.getElementById("small");
+var normalButton = document.getElementById("normal");
+var largeButton = document.getElementById("large");
+smallButton.onclick = function(e){
+content.style.fontSize = "10px";	
+}
+normalButton.onclick = function(e){
+content.style.fontSize = "14px";	
+}
+largeButton.onclick = function(e){
+content.style.fontSize = "20px";	
+}
+    
+    
+    </script>
 </footer>
 
 </body>

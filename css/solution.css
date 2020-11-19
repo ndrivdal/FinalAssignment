@@ -9,6 +9,16 @@
     z-index: -1;
 }
 
+.Increasefont{
+    float:right;
+    display: inline-block;
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    
+}
 .h1OS {
     color: white;
     text-align: center;
@@ -342,3 +352,4 @@ text-align: center;
         margin-top: 72px;
     }
 }
+    
