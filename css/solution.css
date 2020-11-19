@@ -253,60 +253,60 @@ text-align: center;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+}
+@media screen and (max-width: 880px) {
+    .grid-container {
+        margin-top: 48px;
 
-    @media screen and (max-width: 880px) {
-        .grid-container {
-            margin-top: 48px;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 400px 50px 300px 300px 48px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .grid-container {
+        margin-top: 48px;
 
-            grid-template-columns: 1fr 1fr 1fr;
-            grid-template-rows: 50px 400px 50px 300px 300px 48px;
-        }
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
+    }
 
-        @media screen and (max-width: 800px) {
-            .grid-container {
-                margin-top: 48px;
+    .TitleInfo {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-                grid-template-columns: 1fr;
-                grid-template-rows: 50px 1fr 50px 1fr 1fr 50px 1fr 1fr 48px;
-            }
+    .ContainerInfo {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
 
-            .TitleInfo {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 1;
-                grid-row-end: 2;
-            }
+    .Title-app {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
 
-            .ContainerInfo {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 2;
-                grid-row-end: 3;
-            }
+    .ContainerImgApp {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 5;
+        grid-row-end: 5;
+    }
 
-            .Title-app {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 3;
-                grid-row-end: 4;
-            }
+    .ContainerInfoApp {
+        grid-column-start: 1;
+        grid-column-end: end;
+        grid-row-start: 4;
+        grid-row-end: 4;
 
-            .ContainerImgApp {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 5;
-                grid-row-end: 5;
-            }
-
-            .ContainerInfoApp {
-                grid-column-start: 1;
-                grid-column-end: end;
-                grid-row-start: 4;
-                grid-row-end: 4;
-
-                height:430px;
-                max-height:500px;
-            }
+        height:430px;
+        max-height:500px;
+    }
 
 
     .TitleReward {
@@ -333,6 +333,10 @@ text-align: center;
     }
     .rewardtitle {
         text-align: center;
+    }
+
+    .ContainerInfo2 {
+        grid-row-end: 6;
     }
 }
 

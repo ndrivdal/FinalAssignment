@@ -102,10 +102,11 @@
     grid-row-start: 2;
     grid-row-end: 3;
 
+    font-size: 1.5em;
+
     align-self: end;
     justify-self: center;
-    color: white;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+    color: darkslategray;
 }
 
 .titleRight {
@@ -121,9 +122,10 @@
 }
 
 .detailedGoal p {
-    letter-spacing: 1px;
-    line-height: 1.5;
-    margin: 0;
+    font-size: 17px;
+    letter-spacing: 2px;
+    line-height: 1.7;
+    margin: 0 0 10px;
 }
 
 .detailedGoal {
@@ -131,19 +133,13 @@
     grid-column-end: 2;
     grid-row-start: 3;
     grid-row-end: 5;
-    background-color: white;
 
-    height: auto;
-    min-width: 250px;
+    text-align: center;
+    font-weight: 700;
 
-    padding: 15px 15px;
-
-    margin-left: 75px;
-    margin-right: 75px;
+    margin-left: 50px;
+    margin-right: 50px;
     margin-bottom: 100px;
-    border-radius: 5px;
-
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
 .detailedBITE{
@@ -167,7 +163,7 @@
 }
 
 .detailedBITE p {
-    letter-spacing: 5px;
+    letter-spacing: 10px;
     line-height: 1.5;
 }
 
