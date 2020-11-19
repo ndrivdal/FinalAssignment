@@ -100,10 +100,10 @@
     display: grid;
     grid-column-start: 1;
     grid-column-end: end;
-    grid-row-start: 4;
+    grid-row-start: 3;
     grid-row-end: 5;
 
-    margin: 20px;
+    margin: 40px;
 
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -184,27 +184,46 @@ a {
 
 
 @media screen and (max-width: 600px) {
+    .ContainerFullScreenOS {
+        grid-template-rows: 100vh 1fr 100px;
+    }
+
     .ContainerRewards {
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 1fr; 
+        grid-template-rows: min-content min-content min-content;
     }
     .weekly {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 1;
-        grid-row-end: 2;  
+        grid-row-end: 2;
+
+        height: auto;
     }
+
+    .weeklyImg {
+        width: 100px;
+    }
+
     .monthly {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+
+    .monthlyImg {
+        width: 100px;
+    }
+
     .yearly {
         grid-column-start: 1;
-        grid-column-end: 2;
+        grid-column-end: end;
         grid-row-start: 3;
         grid-row-end: 4;
+    }
+
+    .yearlyImg {
+        width: 100px;
     }
 
     img.AppLinkImg {
@@ -277,15 +296,23 @@ a {
 
 @media screen and (max-width: 500px){
     .ImgApp2 {
-        width: 32vw;
+        width: 36vw;
         padding: 1vw;
-        padding-right: 4vw;
+        padding-right: 5vw;
+    }
+    .ContainerApp{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .ContainerInfo{
+        margin-left: 20px;
+        margin-right: 20px;
     }
 }
 
 @media screen and (max-width: 400px){
     .ImgApp2 {
-        width: 30vw;
+        width: 34vw;
     }
 }
 
