@@ -206,6 +206,11 @@ a {
         grid-row-start: 3;
         grid-row-end: 4;
     }
+
+    img.AppLinkImg {
+        height: auto;
+        width: 270px;
+    }
 }
 
 @media screen and (max-width: 900px) {
