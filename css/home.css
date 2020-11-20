@@ -1,114 +1,87 @@
-.containerFullScreen {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 15% 1fr 1fr;
-    min-height: 100vh;
-    width: 100vw;
-    margin-top: 48px;
-
-    background-color: rgba(44, 49, 55, 0.5);
-}
-
-.containerFullScreen.noMargin {
-    margin-top: 0;
-}
-
-
-.containerFullScreenBackground {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 5vh 15% 1fr 1fr 5vh;
-    min-height: calc(110vh - 48px);
-    width: 100vw;
-
-    background-color: #bcebcb;
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
-}
-
-.backgroundImage {
-    position: fixed;
-    height: 100vh;
-    width: 100vw;
+/* --- DEFINING BACKGROUND WITH COLOR OVERLAY --- */
+html {
     background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
     background-size: cover;
     background-position: center;
-    z-index: -1;
+    background-attachment: fixed;
 }
 
-.goal {
-    grid-column-start: 1;
-    grid-column-end: end;
-    grid-row-start: 1;
-    grid-row-end: end;
-    justify-self: center;
-    align-self: center;
-    height: min-content;
+body {
+    background-color: rgba(44, 49, 55, 0.5);
+    margin-top: 48px;
+}
+
+/* --- DEFINING DIFFERENT CONTAINER PARAMETERS --- */
+.flexFullScreen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100vw;
+
     text-align: center;
-    padding-left: 15px;
-    padding-right: 15px;
+}
 
-    z-index: 1;
+.smaller {
+    min-height: 50vh;
+}
 
+.topdownPadding {
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+
+.shadow {
     filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
 }
 
-.goal img {
-    width: 500px;
+.withBackground {
+    background-color: #bcebcb;
 }
 
-.goal h2 {
-    font-size: 3em;
+/* --- DIFFERENT FLEX ELEMENTS --- */
+/* 1. Logo and presentation text */
+.presentation img {
+    width: 40%;
+}
+
+.presentation h2 {
+    font-size: 3.5vw;
     text-align: center;
 }
 
-.goal h2 a {
+.presentation h2 a {
     text-decoration: none;
     color: white;
 }
 
-.goal p {
+.presentation p {
     color: white;
-    font-size: 40px;
+    font-size: 3vw;
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
     margin-bottom: 0;
 }
 
-.detailedGoal {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: end;
-
-    text-align: center;
-    align-self: center;
-
-    margin-left: 50px;
-    margin-right: 50px;
+/* 2. Detailed info-boxes */
+.infoBox {
+    width: 40%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.detailedBITE{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: end;
-
-    text-align: center;
-    align-self: center;
-
-    margin-left: 50px;
-    margin-right: 50px;
-}
-
-.detailedGoal h2, .detailedBITE h2 {
+.infoBox h2 {
     font-size: 2em;
     color: darkslategray;
-    margin-top: 0;
+    margin-top: 50px;
     margin-bottom: 50px;
 }
 
-.detailedGoal p, .detailedBITE p {
+.infoBox p {
     font-weight: 700;
     font-size: 17px;
     letter-spacing: 2px;
@@ -116,194 +89,112 @@
     margin: 0 0 10px;
 }
 
-.titleSingle {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-
-    align-self: end;
-    justify-self: center;
-    color: white;
-    filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
+/* 3. Short description of solution */
+.solution {
+    margin: 10%;
 }
 
-.infoBox {
-    grid-column-start: 1;
-    grid-column-end: end;
-    grid-row-start: 1;
-    grid-row-end: end;
-
-    text-align: center;
-    align-self: center;
-
-    max-width: 100%;
-
-
-    margin-left: 150px;
-    margin-right: 150px;
-    border-radius: 5px;
-
-    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.5));
-}
-
-.infoBox h2 {
-    font-size: 3em;
+.solution h2 {
+    font-size: 2.9em;
     color: white;
     text-align: center;
 }
 
-.infoBox p {
+.solution p, .solution p a {
     color: white;
-    font-size: 20px;
+    font-size: 1.5vw;
     font-weight: 700;
     letter-spacing: 2px;
     line-height: 1.5;
     text-align: center;
 }
 
-.infoBox p.thin {
+.solution p.thin {
     font-weight: 400;
     letter-spacing: 4px;
-    font-size: 25px;
+    font-size: 2.025vw;
     margin: 30px;
     font-variant: all-small-caps;
 }
 
-@media screen and (max-width: 900px) {
-    .containerFullScreenBackground {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 5vh 1fr 1fr 5vh;
+/* --- SCREEN ADJUSTMENTS --- */
+@media screen and (max-width: 800px) {
+    /* 1. Logo presentation and text */
+    .presentation img {
+        width: 60%;
     }
 
-    .containerFullScreen {
-        grid-template-rows: 5% 1fr 5% 1fr;
+    .presentation h2 {
+        font-size: 4.5vw;
     }
 
-    .goal img {
-        width: 400px;
+    .presentation p {
+        font-size: 3.5vw;
     }
 
-    .goal {
-        grid-column-start: 1;
-        grid-column-end: end;
-        justify-self: center;
-        align-self: center;
-    }
-
-    .goal h2 {
-        font-size: 2.5em;
-    }
-
-    .goal p {
-        font-size: 30px;
-    }
-
-    .detailedGoal {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 2;
-        grid-row-end: 3;
-
-        align-self: center;
-
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
-    .detailedGoal p, .detailedBITE p {
-        letter-spacing: 0;
-        line-height: 1.5;
-    }
-
-    .detailedBITE {
-        grid-column-start: 1;
-        grid-column-end: end;
-        grid-row-start: 3;
-        grid-row-end: end;
-
-        align-self: center;
-
-        margin-left: 15px;
-        margin-right: 15px;
-    }
-
+    /* 2. Detailed info-boxes */
     .infoBox {
-        margin-left: 15px;
-        margin-right: 15px;
-        margin-top: 20px;
+        width: 60%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 
-    .infoBox h2 {
+    /* 3. Short description of solution */
+    .solution {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .solution h2 {
         font-size: 2.5em;
     }
 
-    .infoBox p {
-        font-size: 18px;
-        letter-spacing: 0;
-        line-height: 1.25;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .goal img {
-        width: 350px;
+    .solution p, .solution p a {
+        font-size: 2vw;
     }
 
-    .goal h2 {
-        font-size: 2em;
-    }
-
-    .goal p {
-        font-size: 20px;
-    }
-
-    .infoBox h2 {
-        font-size: 2.5em;
-    }
-
-    .infoBox p {
-        font-size: 16px;
-        letter-spacing: 0;
-        line-height: 1.25;
-    }
-}
-
-@media screen and (max-width: 400px) {
-    .goal img {
-        width: 300px;
-    }
-
-    .goal h2 {
-        font-size: 1.7em;
-    }
-
-    .goal p {
-        font-size: 20px;
-    }
-
-    .infoBox h2 {
-        font-size: 1.7em;
+    .solution p.thin {
+        font-size: 2.25vw;
     }
 }
 
 @media screen and (max-width: 640px) {
-    .containerFullScreen {
-        min-height: 100vh;
-    }
-}
-
-@media screen and (max-width: 350px) {
-    .goal img {
-        width: 250px;
+    body {
+        margin: 0;
     }
 
-    .goal p {
-        font-size: 18px;
+    /* 1. Logo presentation and text */
+    .presentation img {
+        width: 80%;
     }
 
-    .infoBox p.thin {
-        font-size: 18px;
+    .presentation h2 {
+        font-size: 8vw;
+    }
+
+    .presentation p {
+        font-size: 5vw;
+    }
+
+    /* 2. Detailed info-boxes */
+    .infoBox {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .infoBox p {
+        letter-spacing: 0;
+        line-height: 1.5;
+    }
+
+    /* 3. Short description of solution */
+    .solution p, .solution p a {
+        letter-spacing: 0;
+        font-size: 3.8vw;
+    }
+
+    .solution p.thin {
+        font-size: 4.75vw;
     }
 }
