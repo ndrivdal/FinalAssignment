@@ -1,5 +1,7 @@
-html {
-    scroll-behavior: smooth; /* does not work on Safari, but that's ok */
+@supports (scroll-behavior: smooth) {
+    html {
+        scroll-behavior: smooth; /* does not work on Safari, but that's ok */
+    }
 }
 
 body {
@@ -11,15 +13,13 @@ body {
 /* --- NAVBAR --- */
 /* NORMAL SCREEN */
 .navbar-normal {
-    grid-column-start: 1;
-    grid-column-start: end;
     display: inline-block;
     position: fixed;
     background-color: #87D68D;
     width: 100%;
     height: 48px;
     text-align: center;
-    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
     top:0;
     left: 0;
 
@@ -80,7 +80,7 @@ body {
         width: 100%;
         height: 48px;
         text-align: center;
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 
         z-index: 2;
     }
@@ -99,7 +99,7 @@ body {
         width: 100%;
         height: 72px;
         text-align: center;
-        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 
         z-index: 2;
     }
