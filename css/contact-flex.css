@@ -1,0 +1,198 @@
+html {
+    background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body {
+    background-color: rgba(44, 49, 55, 0.5);
+    margin-top: 48px;
+}
+
+/* --- DEFINING DIFFERENT CONTAINER PARAMETERS --- */
+.flexFullScreen {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 100vh;
+    width: 100vw;
+
+    text-align: center;
+}
+
+.titleContact {
+    justify-content: center;
+    background-color: transparent;
+    padding-top: 50px;
+    padding-left: 3vw;
+}
+
+.titleContact h1 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    margin: 0;
+    
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 10px 0 15vw 0;
+    justify-content: center;
+    border-radius: 5px;
+  }
+  
+  ul{
+    list-style: none;
+    padding:0;
+  }
+  
+  
+  .company-info{
+    background:#BCEBCB; /*#87D68D eller denne?*/
+    border-radius: 5px 0 0 5px;
+    width: 20%;
+    padding: 2em;
+  }
+  
+  .company-info h3, .company-info ul{
+    text-align: center;
+    margin:0 0 1rem 0;
+  }
+
+  
+  .contact{
+    background:#fff;
+    border-radius: 0 5px 5px 0;
+    width: 60%;
+    padding: 2em;
+  }
+
+  .contact h3 {
+      margin: 0;
+  }
+  
+  /* FORM STYLES */
+  .contact form{
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+
+  }
+
+  .hverRubrikk{
+      width: 30vw;
+  }
+
+  .contact form div label{
+    display: block;
+
+  }
+  
+  .contact form div p{
+    font-weight: 700;
+    margin:0;
+    padding-top: 3vw;
+    width: 80%;
+  }
+  
+  .contact form button{
+    width:100%;
+    padding:1em;
+    border:1px solid #BCEBCB;
+  }
+
+  .contact form input{
+      width:100%;
+      padding:1em;
+      border:2px solid #000;
+      border-radius: 6px;
+  }
+
+  .contact form textarea{
+      max-width:80%;
+      padding:1em;
+      border:2px solid #000;
+      border-radius: 5px;
+  }
+  
+  .contact form button{
+    background:#888;
+    border:0;
+    text-transform: uppercase;
+    border-radius: 5px;
+  }
+  
+  .contact form button:hover,.contact form button:focus{
+    background:#BCEBCB;
+    color: black;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+
+  p.full{
+      width: 100%;
+  }
+  
+  @media screen and (max-width:860px){
+    .company-info h3, .company-info ul, .brand{
+      /*text-align: left;*/
+    }
+
+    .container{
+        padding: 0 3vw;
+    }
+
+    .company-info{
+        width: 95%;
+        border-radius: 5px 5px 0 0;
+        /*padding: 0 1vw 1vw 1vw;*/
+        justify-self: center;
+        padding: 1em;
+    }
+
+    .contact{
+        width: 95%;
+        border-radius: 0 0 5px 5px;
+        padding: 1em;
+    }
+
+    .titleContact{
+        justify-content: center;
+        margin-left: 0;
+      } 
+    
+    .hverRubrikk{
+        width: 40vw;
+    }
+  }
+
+  @media screen and (max-width: 390px){
+    .container{
+        padding: 0;
+        margin: 0;
+    }
+    
+    .company-info{
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    .contact{
+        width: 100%;
+        margin: 0;
+        padding: 0.5em;
+    }
+
+    .hverRubrikk{
+        width: 45vw;
+    }
+
+    
+}

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BITE - Cycle Reward</title>
+    <link rel="stylesheet" href="../css/stylesheet.css">
+    <link rel="stylesheet" href="../css/contact-flex.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="shortcut icon" href="../images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"> <!-- Karla font -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<div class="navbar-normal">
+    <a class="noPadding" href="../index.html"><img class="logo" src="../images/logo500.png" alt="BiTe Logo"></a>
+    <a href="../index.html">HOME</a>
+    <a href="../solution/index.html">OUR SOLUTION</a>
+    <a class="navactive">CONTACT</a>
+</div>
+<div class="navbar-phone-top">
+    <a class="noPadding" href="../index.html"><img class="logo" src="../images/logo500.png" alt="BiTe Logo"></a>
+</div>
+<div class="navbar-phone-bottom">
+    <a href="../index.html">HOME</a>
+    <a href="../solution/index.html">OUR SOLUTION</a>
+    <a class="navactive">CONTACT</a>
+</div>
+
+<div class="backgroundImage"></div>
+<div class="containerFullScreen">
+    <div class="titleContact">
+        <h1>CONTACT US</h1>
+    </div>
+
+    <div class="container">
+        <div class="company-info">
+            <p>
+                We would love to hear your feedback! <br/>Contact us via our contact form, e-mail or by phone.
+            </p>
+            <h3>Contact Information</h3>
+            <ul>
+
+                <li><b>Address:</b> Pilestredet 35, 0166 Oslo</li>
+                <br/>
+                <li><b>Phone:</b> +47 123 45 678</li>
+                <li><b>E-mail:</b> contact@bite.com</li>
+
+            </ul>
+        </div>
+            <div class="contact">
+                <h3>Fill out a form</h3>
+                <form id="contact-form">
+               <div class="hverRubrikk">
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" Placeholder="First name and surname" required>
+                    </p>
+                </div>
+                <div class="hverRubrikk">
+                    <p>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" Placeholder="Write the subject" required>
+                    </p>
+                </div>
+                <div class="hverRubrikk">
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" Placeholder="Example@mail.com" required>
+                    </p>
+                </div >
+                <div class="hverRubrikk">
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" Placeholder="Phone number" required>
+                    </p>
+                </div>
+                <div class="hverRubrikk">
+                    <p class="full">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Write a message" required></textarea>
+                    </p>
+                </div>    
+                    <p class="full">
+                        <button  type="submit">Send</button>
+                    </p>
+                </form>
+            </div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="logoFooter">
+        <a href="#top"><img src="../images/logo500.png" alt="logo"></a>
+    </div>
+    <div class="contactFooter">
+        <p> <strong>Contact:</strong> </p>
+        <p>+47 123 45 678</p>
+        <p>Contact@bite.com</p>
+        <p><strong>Fonts:</strong> <br>
+            <a href="https://fonts.google.com/specimen/Karla?query=karla">Google fonts - Karla</a> </p>
+        <p><strong>Icons:</strong> <br>
+            Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a>
+        <p>Apple style emojis from <a href="https://emojipedia.org/">https://emojipedia.org/</a>
+    </div>
+
+    <script>
+        let contact =document.getElementById("contact-form");
+        contact.addEventListener("submit", (e)=>{
+            e.preventDefault();
+            console.log("Form has been submitted")
+            alert("Message sent to Contact@Bite.com");
+        });
+
+        
+    </script>
+
+    <div class="createdBy">
+        <p> <strong>Created by:</strong> <br>
+            Nikolai Drivdal - S354551<br>
+            Thanh Nguyen - S354587<br>
+            Michal Pajestka - S354558<br>
+            Ingar Benonisen - S354530<br>
+            Lars Storholt - S354518</p>
+        <p><strong>Image sources:</strong> <br>
+            <a href="https://unsplash.com/collections/39621541/dafe---final-assignment/ac71ea7657fd5124cf0531c024cbfe3c">Unsplash.com</a></p>
+    </div>
+    <div class="someIcons">
+        <a href="https://facebook.com"><img src="../images/facebook.png" title="Facebook" alt="Facebook logo" width="32px" height="auto"></a>
+        <a href="https://twitter.com"><img src="../images/twitter.png" title="Twitter" alt="Twitter logo" width="32px" height="auto"></a>
+        <a href="https://instagram.com"><img src="../images/instagram.png" title="Instagram" alt="Instagram logo" width="32px" height="auto"></a>
+    </div>
+    <div class="copyRight">
+        <p>Copyright © 2020 <br>
+            All Rights Reserved</p>
+    </div>
+</footer>
+
+
+
+</body>
+</html>
