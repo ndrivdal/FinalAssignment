@@ -1,115 +1,66 @@
+/* --- DEFINING CONTAINER --- */
 .footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 1.5fr 0.1fr 0.1fr;
-    gap: 0 0;
-    grid-template-areas:
-      ". logoFooter logoFooter ."
-      ". createdBy contactFooter ."
-      ". someIcons someIcons ."
-      "copyRight copyRight copyRight copyRight";
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+
     background-color: #AEAEAE;
-    font-family: 'Karla', sans-serif;
-}
-  
-.logoFooter { 
-    grid-area: logoFooter; 
+
     text-align: center;
 }
 
-.logoFooter img{
+/* --- DIFFERENT FLEX ELEMENTS --- */
+/* 0. All DIVs */
+.footer div {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/* 1. Logo */
+div.footerLogo {
+    width: 100%;
+}
+
+.footerLogo img {
     height: 50px;
 }
-  
-.createdBy { 
-    grid-area: createdBy; 
-    padding-left: 3vw;
-    border-right: 1px #3d434b solid;
-    border-top: 1px #3d434b solid;
+
+/* 2. Text */
+.footer h2 {
+    margin-bottom: 0;
 }
 
-.createdBy p {
-    line-height: 20px;
-}
-  
-.contactFooter { 
-    grid-area: contactFooter; 
-    padding-left: 3vw;
-    border-top: 1px #3d434b solid;
-}
-  
-.someIcons { 
-    grid-area: someIcons; 
-    text-align: center; 
-    justify-self: center;
+.footer p {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
-.someIcons a{
-    font-size: 2em;
-    color: black;
-    padding: 2vw 5vw ;
-    justify-self: center;
-    float: left;
-}
-
-.copyRight{
-    grid-area: copyRight;
-    border-top: 1px black solid;
+/* 3. Social media icons */
+.contact img{
+    width: 32px;
+    height: auto;
     text-align: center;
+
+    margin-left: 3%;
+    margin-right: 3%;
 }
 
-.footer p strong{
-    font-size: 1.2em;
-    color: black;
+/* 4. Copyright */
+div.copyright {
+    width: 100%;
+    margin: 25px 1% 1%;
+}
+div.creatorInfo a {
+    color: darkslategray;
+    font-weight: 700;
 }
 
-.footer a{
-    color: black;
-}
 
+/* --- SCREEN ADJUSTMENTS --- */
 @media screen and (max-width: 640px) {
     .footer {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.2fr 1fr 0.8fr 0.2fr 0.6fr;
-        gap: 0 0;
-        min-height: 99vh;
-        grid-template-areas:
-          "logoFooter"
-          "contactFooter"
-          "createdBy"
-          "someIcons"
-          "copyRight";
+        margin-bottom: 72px;
     }
-      
-    .logoFooter { 
-        grid-area: logoFooter; 
-    }
-      
-    .contactFooter { 
-        grid-area: contactFooter; 
-        text-align: center;
-    }
-      
-    .createdBy { 
-        grid-area: createdBy;
-        border-right: none;
-        text-align: center;
-        
-    }
-      
-    .someIcons { 
-        grid-area: someIcons; 
-        float: left;
-    }
-
-    .copyRight{
-        grid-area: copyRight;
-    }
-      
-      
 }
-
-
-  
