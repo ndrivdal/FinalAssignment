@@ -4,19 +4,28 @@
     }
 }
 
-/* --- DEFINING BACKGROUND WITH COLOR OVERLAY --- */
-html {
-    background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 body {
-    background-color: rgba(44, 49, 55, 0.5);
     margin: 48px 0 0;
     font-family: 'Karla', sans-serif;
     overflow-x: hidden;
+}
+
+/* --- DEFINING BACKGROUND WITH COLOR OVERLAY --- */
+.colorOverlay {
+    background-color: rgba(44, 49, 55, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
+}
+
+.backgroundImage {
+    background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -2;
 }
 
 /* --- NAVBAR --- */
