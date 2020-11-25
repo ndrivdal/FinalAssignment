@@ -22,6 +22,7 @@ body {
 .backgroundImage {
     background-image: url("../images/ariana-prestes-RwNd3xQhjNs-unsplash.jpg");
     background-size: cover;
+    background-position: center;
     width: 100vw;
     height: 100vh;
     position: fixed;
