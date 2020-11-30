@@ -78,19 +78,20 @@ ul{
     width: 30vw;
 }
 
-.contact form div label{
+.contact form label{
     display: block;
 
 }
 
-.contact form div p{
+.contact form p{
     font-weight: 700;
     margin:0;
+    margin-right: 5vw;
     padding-top: 3vw;
-    width: 80%;
+    width: 40%;
 }
 
-.contact form button{
+.contact button{
     width:100%;
     padding:1em;
     border:1px solid #BCEBCB;
@@ -110,14 +111,14 @@ ul{
     border-radius: 5px;
 }
 
-.contact form button{
+.contact button{
     background:#888;
     border:0;
     text-transform: uppercase;
     border-radius: 5px;
 }
 
-.contact form button:hover,.contact form button:focus{
+.contact button:hover,.contact button:focus{
     background:#BCEBCB;
     color: black;
     outline:0;
@@ -179,8 +180,8 @@ p.full{
         padding: 0.5em;
     }
 
-    .hverRubrikk{
-        width: 45vw;
+    .contact form p{
+        width: 90%;
     }
 
 
