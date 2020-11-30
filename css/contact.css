@@ -105,10 +105,11 @@ ul{
 }
 
 .contact form textarea{
-    max-width:80%;
+    width: 95%;
     padding:1em;
     border:2px solid #000;
     border-radius: 5px;
+    resize: none;
 }
 
 .contact button{
@@ -125,7 +126,7 @@ ul{
     transition: background-color 2s ease-out;
 }
 
-p.full{
+.contact form p.full{
     width: 100%;
 }
 
