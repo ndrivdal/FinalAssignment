@@ -26,6 +26,7 @@ body {
 
 .titleContact {
     justify-content: center;
+    text-align:center;
     background-color: transparent;
     padding-top: 50px;
     padding-left: 3vw;
