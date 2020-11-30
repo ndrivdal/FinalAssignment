@@ -146,6 +146,10 @@ p.full{
         padding: 1em;
     }
 
+    .company-info p{
+        text-align: center;
+    }
+
     .contact{
         width: 95%;
         border-radius: 0 0 5px 5px;
