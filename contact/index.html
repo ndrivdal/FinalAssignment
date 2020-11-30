@@ -13,11 +13,6 @@
 </head>
 <body>
 
-<div class="background">
-    <div class="colorOverlay"></div>
-    <div class="backgroundImage"></div>
-</div>
-
 <div class="navbar-normal">
     <a class="noPadding" href="../index.html"><img class="logo" src="../images/logo500.png" alt="BiTe Logo"></a>
     <a href="../index.html">HOME</a>
@@ -33,62 +28,76 @@
     <a class="navactive">CONTACT</a>
 </div>
 
+<div class="background">
+    <div class="colorOverlay"></div>
+    <div class="backgroundImage"></div>
+</div>
+
 <div class="containerFullScreen">
     <div class="titleContact">
         <h1>CONTACT US</h1>
     </div>
-
+    
     <div class="container">
         <div class="wrapper animated bounceInLeft">
-        <div class="company-info">
-            <p>
-                We would love to hear your feedback! <br/>Contact us via our contact form, e-mail or by phone.
-            </p>
-            <h3>Contact Information</h3>
-            <ul>
-
-                <li><b>Address:</b> Pilestredet 35, 0166 Oslo</li>
-                <br/>
-                <li><b>Phone:</b> +47 123 45 678</li>
-                <li><b>E-mail:</b> contact@bite.com</li>
-
-            </ul>
-        </div>
+            <div class="company-info">
+                <p>
+                    We would love to hear your feedback! <br/>Contact us via our contact form, e-mail or by phone.
+                </p>
+                <h3>Contact Information</h3>
+                <ul>
+                    
+                    <li><b>Address:</b> Pilestredet 35, 0166 Oslo</li>
+                    <br/>
+                    <li><b>Phone:</b> +47 123 45 678</li>
+                    <li><b>E-mail:</b> contact@bite.com</li>
+                
+                </ul>
+            </div>
             <div class="contact">
                 <h3>Fill out a form</h3>
                 <form id="contact-form">
-                <p>
-                    <label for="name">Name</label>
-                    <input type="text" name="name" id="name" Placeholder="First name and surname" required>
-                </p>
-                <p>
-                    <label for="subject">Subject</label>
-                    <input type="text" name="subject" id="subject" Placeholder="Write the subject" required>
-                </p>
-                <p>
-                    <label for="email">Email Address</label>
-                    <input type="email" name="email" id="email" Placeholder="Example@mail.com" required>
-                </p>
-                <p>
-                    <label for="phone">Phone Number</label>
-                    <input type="text" name="phone" id="phone" Placeholder="Phone number" required>
-                </p>
-                <p class="full">
-                    <label for="message">Message</label>
-                    <textarea name="message" id="message" rows="5" placeholder="Write a message" required></textarea>
-                </p>
-                <p class="full">
-                    <button  type="submit">Send</button>
-                </p>
+                    <p>
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" Placeholder="First name and surname" required>
+                    </p>
+                    <p>
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" Placeholder="Write the subject" required>
+                    </p>
+                    <p>
+                        <label for="email">Email Address</label>
+                        <input type="email" name="email" id="email" Placeholder="Example@mail.com" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone Number</label>
+                        <input type="text" name="phone" id="phone" Placeholder="Phone number" required>
+                    </p>
+                    <p class="full">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Write a message" required></textarea>
+                    </p>
+                    <p class="full">
+                        <button  type="submit">Send</button>
+                    </p>
                 </form>
             </div>
         </div>
     </div>
 </div>
 
+<script>
+    let contact =document.getElementById("contact-form");
+    contact.addEventListener("submit", (e)=>{
+        e.preventDefault();
+        console.log("Form has been submitted")
+        alert("Message sent to Contact@Bite.com");
+    });
+</script>
+
 <div class="footer shadow">
     <div class="footerLogo">
-        <a href="../index.html"><img src="../images/logo500.png" alt="logo"></a>
+        <a href="#top"><img src="images/logo500.png" alt="logo"></a>
     </div>
     <div class="creatorInfo">
         <h2>Created by:</h2>
@@ -121,9 +130,9 @@
         <p><em>Phone:</em> +47 123 45 678 </p>
         <p><em>E-mail:</em> contact@bite.com</p>
         
-        <a href="https://facebook.com"><img src="../images/facebook.png" title="Facebook" alt="Facebook logo"></a>
-        <a href="https://twitter.com"><img src="../images/twitter.png" title="Twitter" alt="Twitter logo"></a>
-        <a href="https://instagram.com"><img src="../images/instagram.png" title="Instagram" alt="Instagram logo"></a>
+        <a href="https://facebook.com"><img src="images/facebook.png" title="Facebook" alt="Facebook logo"></a>
+        <a href="https://twitter.com"><img src="images/twitter.png" title="Twitter" alt="Twitter logo"></a>
+        <a href="https://instagram.com"><img src="images/instagram.png" title="Instagram" alt="Instagram logo"></a>
     </div>
     <div class="copyright">
         <p>
@@ -132,6 +141,7 @@
         </p>
     </div>
 </div>
+
 
 
 </body>
