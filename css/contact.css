@@ -166,7 +166,7 @@ p.full{
 @media screen and (max-width: 640px){
     .container{
         padding: 0;
-        margin: 0;
+        margin: 0 0 100px;
     }
 
     .company-info{
